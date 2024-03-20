@@ -4,6 +4,135 @@ body {
     padding: 0;
 }
 
+.UpperSec {
+    background-color: rgb(196, 181, 171);
+    position: relative;
+    padding: 20px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color:#606060;
+    opacity: 0;
+}
+
+.para1 {
+    animation: Fadepara1 15s infinite;
+    /* Adjust the duration as needed */
+}
+
+.para2 {
+    animation: Fadepara2 15s infinite;
+    /* Adjust the duration as needed */
+}
+
+.para3 {
+    animation: Fadepara3 15s infinite;
+    /* Adjust the duration as needed */
+}
+
+@keyframes Fadepara1 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Fadepara2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Fadepara3 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 header {
     background-color: #c22037;
     padding: 20px;
