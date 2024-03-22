@@ -27,9 +27,3 @@ function updateTickerAndVisitorCount() {
 }
 
 
-/* $(document).ready(function(){
-  $(".text").each(function(index) {
-      $(this).delay(3000*index).animate({opacity: 1}, 1000);
-  });
-}); */
-
