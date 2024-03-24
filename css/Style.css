@@ -5,7 +5,7 @@ body {
 }
 
 .UpperSec {
-    background-color: rgb(196, 181, 171);
+    background-color: rgb(180, 156, 140);
     position: relative;
     padding: 20px;
 }
@@ -16,7 +16,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
-    color: #606060;
+    color: #3d3d3d;
     opacity: 0;
 }
 
@@ -138,6 +138,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: #be1035;
 }
 
 .nav {
@@ -145,69 +146,66 @@ header {
     align-items: center;
 }
 
-.SearchBar {
-    position: relative;
-    margin-left: 30rem;
-    height: 3rem;
-    width: 25rem;
-    border-radius: 0.5rem;
-    border-color: rgb(184, 184, 184) rgb(184, 184, 184);
-}
-
-.searchButton {
-    position: relative;
-    right: 3.5rem;
-    border-radius: 0.5rem;
-    border-color: rgb(184, 184, 184) rgb(184, 184, 184);
-    background: lightgray;
-}
-
-.buttonImg {
-    height: 2.75rem;
-    width: 3rem;
-
-
-}
-
 .logo {
     position: relative;
-    height: 5.5rem;
-    width: 25rem;
+    height: 5rem;
+    width: 10rem;
     border-radius: 0.5rem;
-    right: 1.5rem;
+    margin-left: 3rem;
 }
 
-.mobile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.mobilepara {
+.search-container {
     position: relative;
-    top: 1rem;
+    right: 15rem;
+    width: 30rem;
+    height: 40px;
 }
 
-.phoneImage,
-.loginimage,
-.bagimage {
-    display: inline-block;
-    position: relative;
-    height: 2rem;
-    width: 2rem;
-    top: 1rem;
+#search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    border: none;
+    border: 2px solid white; /* Set border color to white */
+    background-color: #be1035;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+#search::placeholder{
+    color: white;
+}
+#search:focus {
+    outline: none;
 }
 
-.line {
-    position: relative;
-    height: 4rem;
-    width: 1rem;
+#search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    padding: 10px 15px;
+    border: none;
+    background-image: url(img/images-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    border: 2px solid white;
+    background-color: #be1035;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #45a049;
 }
 
 .visitor-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 }
@@ -217,10 +215,13 @@ header {
     top: 1rem;
     height: 5rem;
 }
-.Visitorpara{
+
+.Visitorpara {
+    color: white;
     position: relative;
     top: 0.3rem;
-    right: 2rem; ;
+    right: 2rem;
+    ;
 }
 
 footer {
