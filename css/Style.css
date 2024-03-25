@@ -158,7 +158,7 @@ header {
     position: relative;
     right: 15rem;
     width: 30rem;
-    height:2rem;
+    height: 2rem;
 }
 
 #search {
@@ -169,14 +169,17 @@ header {
     height: 100%;
     padding: 10px 15px;
     border: none;
-    border: 2px solid white; /* Set border color to white */
+    border: 2px solid white;
+    /* Set border color to white */
     background-color: #be1035;
     font-size: 16px;
     box-sizing: border-box;
 }
-#search::placeholder{
+
+#search::placeholder {
     color: white;
 }
+
 #search:focus {
     outline: none;
 }
@@ -186,7 +189,7 @@ header {
     top: 0;
     right: 0;
     width: 50px;
-    height:2rem;
+    height: 2rem;
     padding: 10px 15px;
     border: none;
     background-image: url(img/images-removebg-preview.png);
@@ -214,7 +217,7 @@ header {
     position: relative;
     top: 1rem;
     height: 5rem;
-    
+
 }
 
 .Visitorpara {
@@ -222,8 +225,46 @@ header {
     position: relative;
     top: 0.3rem;
     right: 2rem;
-    ;
+
 }
+
+.HomeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    animation: upTodown 2s forwards 0.5s;
+    position: relative;
+    z-index: -1;
+}
+
+.HomeSection a {
+    position: relative;
+    transition: 0.4s ease;
+    text-decoration: none;
+    /* Add this line */
+}
+
+.HomeHover {
+    font-size: x-large;
+    color: #3d3d3d;
+}
+
+.HomeHover:hover {
+    color: #be1035;
+}
+
+
+@keyframes upTodown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 
 footer {
     background-color: #f2f2f2;
