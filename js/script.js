@@ -27,3 +27,12 @@ function updateTickerAndVisitorCount() {
 }
 
 
+window.addEventListener("scroll", function () {
+  let product = document.getElementById("product");
+  if (window.scrollY > 250) {
+      product.style.animationName = "slideInLeft";
+      product.style.webkitAnimationName = "slideInLeft";
+      product.style.opacity = 1;
+  }
+});
+

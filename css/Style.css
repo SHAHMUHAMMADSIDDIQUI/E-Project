@@ -141,7 +141,7 @@ header {
     background-color: #be1035;
 }
 
-.nav {
+.Ownnav {
     display: flex;
     align-items: center;
 }
@@ -232,17 +232,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #f2f2f2;
-    animation: upTodown 2s forwards 0.5s;
+    background-color: #d3d3d3;
     position: relative;
-    z-index: -1;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5)
 }
 
 .HomeSection a {
     position: relative;
     transition: 0.4s ease;
     text-decoration: none;
-    /* Add this line */
 }
 
 .HomeHover {
@@ -254,17 +252,58 @@ header {
     color: #be1035;
 }
 
-
-@keyframes upTodown {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
+.RunningBanner {
+    margin-top: 3rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
 
+.Topsellhead {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
 
 footer {
     background-color: #f2f2f2;
