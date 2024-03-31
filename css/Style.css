@@ -170,7 +170,6 @@ header {
     padding: 10px 15px;
     border: none;
     border: 2px solid white;
-    /* Set border color to white */
     background-color: #be1035;
     font-size: 16px;
     box-sizing: border-box;
@@ -213,28 +212,29 @@ header {
     justify-content: flex-end;
 }
 
-.visitorLogo {
-    position: relative;
-    top: 1rem;
-    height: 5rem;
+.visitormain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.visitorLogo {
+    margin-top: 1rem;
+    height: 5rem;
 }
 
 .Visitorpara {
     color: white;
-    position: relative;
-    top: 0.3rem;
-    right: 2rem;
-
 }
 
 .HomeSection {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: #d3d3d3;
+    justify-content: center;
+    gap: 5rem;
     position: relative;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5)
+    margin: 2rem;
 }
 
 .HomeSection a {
@@ -253,8 +253,7 @@ header {
 }
 
 .RunningBanner {
-    margin-top: 3rem;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Topsellhead {
@@ -376,6 +375,71 @@ header {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+}
+
+.cardupperheading {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 4.5rem;
+}
+
+.cardupperpara {
+    text-align: center;
+    font: 1.3rem sans-serif;
+}
+
+.MaincardHead {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.Cardone {
+    padding: 2rem;
+    border: lightgray solid 5px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in;
+    margin-top: 8rem;
+}
+
+.Cardone:hover {
+    border: #00000088 solid 5px;
+    transition: 0.5s ease-out;
+}
+
+.Cardonehead {
+    padding-top: 1rem;
+}
+
+.cardonepara u:hover {
+    color: #be1035;
+    text-decoration: none;
+}
+
+
+.Cardtwo {
+    padding: 2rem;
+    border: lightgray solid 5px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in;
+    margin-bottom: 8rem;
+}
+
+.Cardtwo:hover {
+    border: #00000088 solid 5px;
+    transition: 0.5s ease-out;
+}
+
+.Cardtwohead {
+    padding-top: 1rem;
+}
+
+.cardtwopara u:hover {
+    color: #be1035;
+    text-decoration: none;
 }
 
 footer {
