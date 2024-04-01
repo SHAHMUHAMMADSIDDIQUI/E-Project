@@ -39,7 +39,7 @@ window.addEventListener("scroll", function scrollHandler() {
   let topsellingheading = document.getElementById("Topsellhead");
 
 
-  if (window.scrollY > 100) {
+  if (window.scrollY > 120) {
     /* Heading Para */
     topsellingheading.style.margin.top = "3rem"
     topsellingheading.style.textAlign = "center";
@@ -117,30 +117,85 @@ window.addEventListener("scroll", function scrollHandler() {
     Productsix.style.webkitAnimationFillMode = "both";
     Productsix.style.animationFillMode = "both";
     Productsix.style.opacity = "1";
-   
-     /* Product Seven */Productone.style.border = "1px solid #ccc";
-     Productseven.style.borderRadius = "5px";
-     Productseven.style.padding = "20px";
-     Productseven.style.webkitAnimation = "slideRight 1s forwards";
-     Productseven.style.animation = "slideRight 1s forwards";
-     Productseven.style.webkitAnimationDuration = "var(--animate-duration)";
-     Productseven.style.animationDuration = "var(--animate-duration)";
-     Productseven.style.webkitAnimationFillMode = "both";
-     Productseven.style.animationFillMode = "both";
-     Productseven.style.opacity = "1";
 
-     /* Product Seven */Productone.style.border = "1px solid #ccc";
-     Producteight.style.borderRadius = "5px";
-     Producteight.style.padding = "20px";
-     Producteight.style.webkitAnimation = "slideRight 1s forwards";
-     Producteight.style.animation = "slideRight 1s forwards";
-     Producteight.style.webkitAnimationDuration = "var(--animate-duration)";
-     Producteight.style.animationDuration = "var(--animate-duration)";
-     Producteight.style.webkitAnimationFillMode = "both";
-     Producteight.style.animationFillMode = "both";
-     Producteight.style.opacity = "1";
+    /* Product Seven */
+    Productone.style.border = "1px solid #ccc";
+    Productseven.style.borderRadius = "5px";
+    Productseven.style.padding = "20px";
+    Productseven.style.webkitAnimation = "slideRight 1s forwards";
+    Productseven.style.animation = "slideRight 1s forwards";
+    Productseven.style.webkitAnimationDuration = "var(--animate-duration)";
+    Productseven.style.animationDuration = "var(--animate-duration)";
+    Productseven.style.webkitAnimationFillMode = "both";
+    Productseven.style.animationFillMode = "both";
+    Productseven.style.opacity = "1";
 
-     window.removeEventListener("scroll", scrollHandler);
+    /* Product Seven */
+    Productone.style.border = "1px solid #ccc";
+    Producteight.style.borderRadius = "5px";
+    Producteight.style.padding = "20px";
+    Producteight.style.webkitAnimation = "slideRight 1s forwards";
+    Producteight.style.animation = "slideRight 1s forwards";
+    Producteight.style.webkitAnimationDuration = "var(--animate-duration)";
+    Producteight.style.animationDuration = "var(--animate-duration)";
+    Producteight.style.webkitAnimationFillMode = "both";
+    Producteight.style.animationFillMode = "both";
+    Producteight.style.opacity = "1";
+
+    window.removeEventListener("scroll", scrollHandler);
+  }
+});
+
+/* Card Events */
+window.addEventListener("scroll", function scrollHandler() {
+  let cardone = document.getElementById("Cardone");
+  let cardtwo = document.getElementById("Cardtwo");
+  let cardthree = document.getElementById("Cardthree");
+  let cardfour = document.getElementById("Cardfour");
+  if (window.scrollY > 1000) {
+    /* For CardOne */
+    cardone.style.webkitAnimation = "cardslideup 1s forwards";
+    cardone.style.animation = "cardslideup 1s forwards";
+    cardone.style.webkitAnimationDuration = "var(--animate-duration)";
+    cardone.style.animationDuration = "var(--animate-duration)";
+    cardone.style.webkitAnimationFillMode = "both";
+    cardone.style.animationFillMode = "both";
+    cardone.style.opacity = "1";
+    cardone.style.transition="2s"
+
+    /* For CardTwo */
+    cardtwo.style.webkitAnimation = "cardslidedown 1s forwards";
+    cardtwo.style.animation = "cardslidedown 1s forwards";
+    cardtwo.style.webkitAnimationDuration = "var(--animate-duration)";
+    cardtwo.style.animationDuration = "var(--animate-duration)";
+    cardtwo.style.webkitAnimationFillMode = "both";
+    cardtwo.style.animationFillMode = "both";
+    cardtwo.style.opacity = "1";
+    /* cardtwo.style.position = "relative";
+    cardtwo.style.zIndex = "-1"; */
+    cardtwo.style.transition="2s"
+
+    /*For CardThree  */
+    cardthree.style.webkitAnimation = "cardslideup 1s forwards";
+    cardthree.style.animation = "cardslideup 1s forwards";
+    cardthree.style.webkitAnimationDuration = "var(--animate-duration)";
+    cardthree.style.animationDuration = "var(--animate-duration)";
+    cardthree.style.webkitAnimationFillMode = "both";
+    cardthree.style.animationFillMode = "both";
+    cardthree.style.opacity = "1 ";
+    cardthree.style.transition="2s"
+
+    /* For CardFour */
+    cardfour.style.webkitAnimation = "cardslidedown 1s forwards";
+    cardfour.style.animation = "cardslidedown 1s forwards";
+    cardfour.style.webkitAnimationDuration = "var(--animate-duration)";
+    cardfour.style.animationDuration = "var(--animate-duration)";
+    cardfour.style.webkitAnimationFillMode = "both";
+    cardfour.style.animationFillMode = "both";
+    cardfour.style.opacity = "1";
+    cardfour.style.transition="2s"
+
+    window.removeEventListener("scroll", scrollHandler);
   }
 });
 

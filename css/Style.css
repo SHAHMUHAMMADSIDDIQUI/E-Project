@@ -391,7 +391,7 @@ header {
 .MaincardHead {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     gap: 1rem;
 }
 
@@ -402,6 +402,7 @@ header {
     flex-direction: column;
     transition: 0.5s ease-in;
     margin-top: 8rem;
+    opacity: 0;
 }
 
 .Cardone:hover {
@@ -414,10 +415,36 @@ header {
 }
 
 .cardonepara u:hover {
+    cursor: pointer;
     color: #be1035;
     text-decoration: none;
 }
 
+@-webkit-keyframes cardslideup {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes cardslideup {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 .Cardtwo {
     padding: 2rem;
@@ -426,6 +453,7 @@ header {
     flex-direction: column;
     transition: 0.5s ease-in;
     margin-bottom: 8rem;
+    opacity: 0;
 }
 
 .Cardtwo:hover {
@@ -440,6 +468,33 @@ header {
 .cardtwopara u:hover {
     color: #be1035;
     text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes cardslidedown {
+    from {
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes cardslidedown {
+    from {
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 footer {
@@ -450,3 +505,7 @@ footer {
 .content {
     padding: 20px;
 }
+
+
+
+
