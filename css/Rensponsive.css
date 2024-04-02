@@ -1,0 +1,1047 @@
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 767px) {
+    .search-container {
+        right: 0;
+    }
+
+    .UpperSec {
+        padding: 10px;
+    }
+
+    .HomeSection {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .visitormain {
+        margin-right: 0.5rem;
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .MaincardHead {
+        flex-wrap: wrap;
+    }
+
+    .Cardone,
+    .Cardtwo {
+        margin: 1rem 0;
+    }
+
+    .product {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .UpperSec {
+        background-color: rgb(180, 156, 140);
+        position: relative;
+        padding: 20px;
+    }
+
+    .text {
+        align-items: center;
+        font-size: 10px;
+        color: #3d3d3d;
+        opacity: 0;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
+    .para1 {
+        animation: Fadepara1 15s infinite;
+
+    }
+
+    .para2 {
+        animation: Fadepara2 15s infinite;
+
+    }
+
+    .para3 {
+        animation: Fadepara3 15s infinite;
+
+    }
+
+    @keyframes Fadepara1 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        35% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes Fadepara2 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 0;
+        }
+
+        45% {
+            opacity: 1;
+        }
+
+        55% {
+            opacity: 1;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes Fadepara3 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        85% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        background-color: #be1035;
+        position: relative;
+    }
+
+    .butt {
+        display: block;
+        border: #fff solid 2px;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        background-color: #be1035;
+    }
+
+    .buttimg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .logo {
+        height: 4rem;
+        width: 7rem;
+        border-radius: 0.5rem;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    #search {
+        display: none;
+
+    }
+
+    #search::placeholder {
+        display: none;
+    }
+
+    #search-button {
+        display: none;
+
+    }
+
+    #search-button:hover {
+        display: none;
+    }
+
+    .visitormain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .visitorLogo {
+        margin-top: 1rem;
+        height: 3rem;
+    }
+
+    .Visitorpara {
+        color: white;
+        font-size: 10px;
+    }
+
+
+    .HomeSection {
+        display: none;
+    }
+
+    .HomeSection a {
+        display: none;
+    }
+
+    .HomeHover {
+        display: none;
+    }
+
+    .HomeHover:hover {
+        display: none;
+    }
+
+    .RunningBanner {
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .runningbannerimages {
+        height: 350px;
+    }
+
+    .Topsellhead {
+        margin-top: 3rem;
+        text-align: center;
+        opacity: 0;
+    }
+
+    @-webkit-keyframes fadeinner {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeinner {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .product {
+        border-color: #ccc;
+        padding: 20px;
+        opacity: 0;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+    }
+
+    .product button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:focus {
+        background-color: #007bff;
+    }
+
+    .product button:active {
+        background-color: #0056b3;
+    }
+
+    @-webkit-keyframes slideleft {
+        from {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideleft {
+        from {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @-webkit-keyframes slideRight {
+        from {
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .cardupperheading {
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .cardupperpara {
+        text-align: center;
+        font: 0.8rem sans-serif;
+    }
+
+    .MaincardHead {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .Cardone {
+        padding: 2rem;
+        border: lightgray solid 5px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        margin-top: 8rem;
+        opacity: 0;
+    }
+
+    .Cardone:hover {
+        border: #00000088 solid 5px;
+        transition: 0.5s ease-out;
+    }
+
+    .cardimages {
+        height: 200px;
+        width: 100px;
+    }
+
+    .Cardonehead {
+        padding-top: 1rem;
+    }
+
+    .cardonepara u:hover {
+        cursor: pointer;
+        color: #be1035;
+        text-decoration: none;
+    }
+
+    @-webkit-keyframes cardslideup {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes cardslideup {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .Cardtwo {
+        padding: 2rem;
+        border: lightgray solid 5px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        margin-bottom: 8rem;
+        opacity: 0;
+    }
+
+    .Cardtwo:hover {
+        border: #00000088 solid 5px;
+        transition: 0.5s ease-out;
+    }
+
+    .Cardtwohead {
+        padding-top: 1rem;
+    }
+
+    .cardtwopara u:hover {
+        color: #be1035;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @-webkit-keyframes cardslidedown {
+        from {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes cardslidedown {
+        from {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 375px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .UpperSec {
+        background-color: rgb(180, 156, 140);
+        position: relative;
+        padding: 20px;
+    }
+
+    .text {
+        align-items: center;
+        font-size: 12px;
+        color: #3d3d3d;
+        opacity: 0;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
+    .para1 {
+        animation: Fadepara1 15s infinite;
+
+    }
+
+    .para2 {
+        animation: Fadepara2 15s infinite;
+
+    }
+
+    .para3 {
+        animation: Fadepara3 15s infinite;
+
+    }
+
+    @keyframes Fadepara1 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        35% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes Fadepara2 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 0;
+        }
+
+        45% {
+            opacity: 1;
+        }
+
+        55% {
+            opacity: 1;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes Fadepara3 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        85% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        background-color: #be1035;
+        position: relative;
+    }
+
+    .butt {
+        display: block;
+        border: #fff solid 2px;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        background-color: #be1035;
+    }
+
+    .buttimg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .logo {
+        height: 4rem;
+        width: 7rem;
+        border-radius: 0.5rem;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    #search {
+        display: none;
+
+    }
+
+    #search::placeholder {
+        display: none;
+    }
+
+    #search-button {
+        display: none;
+
+    }
+
+    #search-button:hover {
+        display: none;
+    }
+
+    .visitormain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .visitorLogo {
+        margin-top: 1rem;
+        height: 3rem;
+    }
+
+    .Visitorpara {
+        color: white;
+        font-size: 10px;
+    }
+
+
+    .HomeSection {
+        display: none;
+    }
+
+    .HomeSection a {
+        display: none;
+    }
+
+    .HomeHover {
+        display: none;
+    }
+
+    .HomeHover:hover {
+        display: none;
+    }
+
+    .RunningBanner {
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .runningbannerimages {
+        height: 250px;
+    }
+
+    .Topsellhead {
+        margin-top: 3rem;
+        text-align: center;
+        opacity: 0;
+    }
+
+    @-webkit-keyframes fadeinner {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeinner {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .product {
+        border-color: #ccc;
+        padding: 20px;
+        opacity: 0;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+    }
+
+    .product button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:focus {
+        background-color: #007bff;
+    }
+
+    .product button:active {
+        background-color: #0056b3;
+    }
+
+    @-webkit-keyframes slideleft {
+        from {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideleft {
+        from {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @-webkit-keyframes slideRight {
+        from {
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .cardupperheading {
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .cardupperpara {
+        text-align: center;
+        font: 0.8rem sans-serif;
+    }
+
+    .MaincardHead {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .Cardone {
+        padding: 2rem;
+        border: lightgray solid 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s ease-in;
+        margin-top: 8rem;
+        opacity: 0;
+        margin-left: 0.5rem;
+    }
+
+    .Cardone:last-child {
+        margin-left: 0;
+        /* Remove margin from the last .Cardone element to avoid extra space */
+    }
+
+    .Cardone:hover {
+        border: #00000088 solid 5px;
+        transition: 0.5s ease-out;
+    }
+
+    .cardimages {
+        height: 200px;
+        width: 100px;
+    }
+
+    .Cardonehead {
+        padding-top: 1rem;
+    }
+
+    .cardonepara {
+        font-size: 12px;
+        align-self: flex-start;
+        /* Align text at the start */
+    }
+
+    .cardonepara u:focus {
+        cursor: pointer;
+        color: #be1035;
+        text-decoration: none;
+    }
+
+    .cardonepara u:active {
+        color: #000;
+    }
+
+    @-webkit-keyframes cardslideup {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes cardslideup {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .Cardtwo {
+        padding: 2rem;
+        border: lightgray solid 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s ease-in;
+        margin-bottom: 8rem;
+        opacity: 0;
+        margin-left: 0.5rem;
+    }
+
+    .Cardtwo:last-child {
+        margin-left: 0;
+    }
+
+    .Cardtwo:hover {
+        border: #00000088 solid 5px;
+        transition: 0.5s ease-out;
+    }
+
+    .Cardtwohead {
+        padding-top: 1rem;
+    }
+
+    .cardtwopara u:hover {
+        color: #be1035;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @-webkit-keyframes cardslidedown {
+        from {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes cardslidedown {
+        from {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+
+
+}
