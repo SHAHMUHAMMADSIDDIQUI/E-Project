@@ -25,6 +25,10 @@ function updateTickerAndVisitorCount() {
   const time = new Date().toLocaleTimeString();
   document.getElementById('ticker').textContent = `Date: ${date} | Time: ${time}`;
 }
+function toggleclass() {
+  let a = document.getElementById("MobilehomeSection");
+  a.classList.toggle("showMenu");
+}
 
 
 // Function to handle scroll events for desktop screens

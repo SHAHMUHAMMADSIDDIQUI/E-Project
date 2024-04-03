@@ -25,7 +25,7 @@
 
 
     <!-- Upper Section-->
-    <section class="UpperSec">
+    <section id="lora" class="UpperSec">
         <div>
             <p class="text para1"><b>Free Shipping</b> With Any $50+ Order</p>
             <p class="text para2"><b>3 Free Samples</b> With Any Order</p>
@@ -39,7 +39,7 @@
             <!--Main Logo Here  -->
             <div>
                 <div>
-                    <button class="butt"><img class="buttimg" src="css/img/list-removebg-preview.png" alt=""></button>
+                    <button onclick="toggleclass()" class="butt"><img class="buttimg" src="css/img/list-removebg-preview.png" alt=""></button>
                 </div>
 
                 <img src="css/img/merchant_image-merchant_open_graph.png" alt="Reload" class="logo">
@@ -77,7 +77,6 @@
             <a class="hvr-underline-from-center HomeHover" href="">FAQ's</a>
         </div>
     </section>
-
 
 
     <!--Running Banner -->
@@ -192,28 +191,74 @@
     <h2 class="cardupperheading">Your skin. Our expertise.</h2>
     <p class="cardupperpara">DISCOVER OUR PLANT-POWERED FORMULAS</p>
     <section class=" container MaincardHead">
-        
-            <span id="Cardone" class="col-5 col-lg-3 Cardone">
-                <img class="cardimages" src="css/img/Card 1.jpg" alt="">
-                <h3 class="Cardonehead"> MAKEUP</h3>
-                <p class="cardonepara"><u>SHOP NOW</u></p>
-            </span>
-            <span id="Cardtwo" class="col-5 col-lg-3 Cardtwo">
-                <img class="cardimages" src="css/img/Card 2.JPG" alt="">
-                <h3 class="Cardtwohead"> MAKEUP</h3>
-                <p class="cardtwopara"><u>SHOP NOW</u></p>
-            </span>
-            <span id="Cardthree" class="col-5 col-lg-3 Cardone">
-                <img class="cardimages" src="css/img/Card 3.jpg" alt="">
-                <h3 class="Cardonehead"> MAKEUP</h3>
-                <p class="cardonepara"><u>SHOP NOW</u></p>
-            </span>
-            <span id="Cardfour" class="col-5 col-lg-3 Cardtwo">
-                <img class="cardimages" src="css/img/Card 4.jpg" alt="">
-                <h3 class="Cardtwohead"> MAKEUP</h3>
-                <p class="cardtwopara"><u>SHOP NOW</u></p>
-            </span>
-      
+
+        <span id="Cardone" class="col-5 col-lg-3 Cardone">
+            <img class="cardimages" src="css/img/Card 1.jpg" alt="">
+            <h3 class="Cardonehead"> MAKEUP</h3>
+            <p class="cardonepara"><u>SHOP NOW</u></p>
+        </span>
+        <span id="Cardtwo" class="col-5 col-lg-3 Cardtwo">
+            <img class="cardimages" src="css/img/Card 2.JPG" alt="">
+            <h3 class="Cardtwohead"> MAKEUP</h3>
+            <p class="cardtwopara"><u>SHOP NOW</u></p>
+        </span>
+        <span id="Cardthree" class="col-5 col-lg-3 Cardone">
+            <img class="cardimages" src="css/img/Card 3.jpg" alt="">
+            <h3 class="Cardonehead"> MAKEUP</h3>
+            <p class="cardonepara"><u>SHOP NOW</u></p>
+        </span>
+        <span id="Cardfour" class="col-5 col-lg-3 Cardtwo">
+            <img class="cardimages" src="css/img/Card 4.jpg" alt="">
+            <h3 class="Cardtwohead"> MAKEUP</h3>
+            <p class="cardtwopara"><u>SHOP NOW</u></p>
+        </span>
+
+    </section>
+    <!-- For Mobile Screen NavBarSetup -->
+    <section>
+        <div id="MobilehomeSection" class="MobilehomeSection">
+
+            <div class="menubar">
+                <h4>MenuBar
+                    <button onclick="toggleclass()" style="border: none; background-color: #be1035;">
+                        <img style="height: 2rem;width: 2rem;" src="css/img/close-removebg-preview.png" alt="">
+                    </button>
+                </h4>
+            </div>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">Home</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">Face</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">Body</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">SunScreens</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">Hair</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">Perfumes</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">About Us</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item">
+                <a class="nav-link" href="#lora" onclick="toggleclass()">FAQ's</a>
+            </il>
+
+        </div>
     </section>
 
     <footer>

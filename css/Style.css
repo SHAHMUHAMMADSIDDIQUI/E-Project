@@ -134,6 +134,9 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -514,3 +517,8 @@ footer {
 .content {
     padding: 20px;
 }
+
+.MobilehomeSection {
+    display: none;
+}
+
