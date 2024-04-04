@@ -197,7 +197,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        margin-right: 1rem;
     }
 
     .visitorLogo {
@@ -234,42 +234,21 @@
         height: 500px;
     }
 
+    /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
         text-align: center;
-        opacity: 0;
     }
 
-    @-webkit-keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .container {
+    .rowcontainer {
         display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .product {
         border-color: #ccc;
         padding: 20px;
-        opacity: 0;
     }
 
     .product img {
@@ -304,72 +283,24 @@
         background-color: #0056b3;
     }
 
-    @-webkit-keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
 
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
 
-    @keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @-webkit-keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
+    /* Selling Bundle Cards  */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .cardupperpara {
         text-align: center;
-        font: 0.8rem sans-serif;
+        font: 1rem sans-serif;
     }
 
     .MaincardHead {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 1rem;
         gap: 1rem;
     }
@@ -742,7 +673,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        margin-right: 1rem;
     }
 
     .visitorLogo {
@@ -779,43 +710,24 @@
         height: 500px;
     }
 
+
+    /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
         text-align: center;
-        opacity: 0;
     }
 
-    @-webkit-keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .container {
+    .rowcontainer {
         display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .product {
         border-color: #ccc;
         padding: 20px;
-        opacity: 0;
     }
+
 
     .product img {
         max-width: 100%;
@@ -904,12 +816,12 @@
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .cardupperpara {
         text-align: center;
-        font: 0.8rem sans-serif;
+        font: 0.9rem sans-serif;
     }
 
     .MaincardHead {
@@ -1286,7 +1198,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        margin-right: 1rem;
     }
 
     .visitorLogo {
@@ -1324,43 +1236,24 @@
         height: 350px;
     }
 
+
+    /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
         text-align: center;
-        opacity: 0;
     }
 
-    @-webkit-keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .container {
+    .rowcontainer {
         display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .product {
         border-color: #ccc;
         padding: 20px;
-        opacity: 0;
     }
+
 
     .product img {
         max-width: 100%;
@@ -1395,58 +1288,9 @@
         background-color: #0056b3;
     }
 
-    @-webkit-keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
 
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
 
-    @keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @-webkit-keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
+    /*  */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -1829,7 +1673,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        margin-right: 1rem;
     }
 
     .visitorLogo {
@@ -1867,37 +1711,22 @@
         height: 250px;
     }
 
+
+    /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
         text-align: center;
-        opacity: 0;
-        font-size: 1.6rem;
     }
 
-    @-webkit-keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeinner {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .product {
         border-color: #ccc;
         padding: 20px;
-        opacity: 0;
     }
 
     .product img {
