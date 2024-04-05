@@ -146,3 +146,9 @@ attachScrollHandler();
 
 // Reattach scroll event listener on window resize to handle screen size changes
 window.addEventListener("resize", attachScrollHandler);
+
+
+
+
+
+

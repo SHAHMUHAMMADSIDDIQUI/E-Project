@@ -447,7 +447,11 @@ header {
 }
 
 /*Products Cards */
-.TopProductlhead {
+.MainProductContainer {
+    padding-top: 200px;
+}
+
+.ProductcardHead {
     margin-top: 3rem;
     text-align: center;
     font-size: 3rem;
@@ -510,6 +514,10 @@ header {
     text-align: justify;
 }
 
+.ProductImageModal {
+    height: 600px;
+}
+
 .PriceAndQuantity {
     display: flex;
     justify-content: space-between;
@@ -523,6 +531,10 @@ header {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.AddtoCartButt:hover {
+    background-color: #0056b3;
 }
 
 .quantity {
@@ -549,13 +561,7 @@ header {
     border-radius: 3px;
 }
 
-.AddtoCartButt {
-    background-color: #007bff;
-}
 
-.AddtoCartButt:hover {
-    background-color: #0056b3;
-}
 
 /* Mobile Menu Bar */
 .MobilehomeSection {

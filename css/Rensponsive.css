@@ -429,6 +429,127 @@
         margin: 1rem 0;
     }
 
+    /*Products Cards */
+    .MainProductContainer {
+        padding-top: 200px;
+    }
+
+
+    .ProductcardHead {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .product {
+        border: lightgray solid 3px;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+        text-align: left justify;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .product button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:hover {
+        background-color: #0056b3;
+    }
+
+
+    /* Modal Setup */
+    .Modalbody {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ProductHeadingModal {
+        font-size: 25px;
+        text-align: center justify;
+    }
+
+    .ProductDescriptionModal {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .ProductImageModal {
+        height: 500px;
+    }
+
+    .PriceAndQuantity {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AddtoCartButt {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .AddtoCartButt:hover {
+        background-color: #0056b3;
+    }
+
+    .quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity button {
+        padding: 5px 10px;
+        border: 1px solid #007bff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .quantity input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #007bff;
+    }
+
+    .decrease,
+    .increase {
+        border: #007bff solid 1px;
+        border-radius: 3px;
+    }
+
+    /*  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -436,7 +557,605 @@
         transition: left 1s ease;
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
+        background-color: white;
+        padding: 20px;
+        height: 100%;
+        width: 75%;
+        background-color: #be1035;
+        color: white;
+        box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+    .MobilehomeSection a {
+        text-decoration: none;
+    }
+
+    .menubar {
         gap: 1rem;
+    }
+
+    .showMenu {
+        left: 0;
+        transition: 1s ease-out;
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+
+    .content {
+        padding: 10px;
+    }
+
+
+
+
+}
+
+@media (max-width: 990px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .UpperSec {
+        background-color: rgb(180, 156, 140);
+        position: relative;
+        padding: 20px;
+    }
+
+    .text {
+        align-items: center;
+        font-size: 10px;
+        color: #3d3d3d;
+        opacity: 0;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
+    .para1 {
+        animation: Fadepara1 15s infinite;
+
+    }
+
+    .para2 {
+        animation: Fadepara2 15s infinite;
+
+    }
+
+    .para3 {
+        animation: Fadepara3 15s infinite;
+
+    }
+
+    @keyframes Fadepara1 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        35% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes Fadepara2 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 0;
+        }
+
+        45% {
+            opacity: 1;
+        }
+
+        55% {
+            opacity: 1;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes Fadepara3 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        85% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        background-color: #be1035;
+
+    }
+
+    .butt {
+        display: block;
+        border: #fff solid 2px;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        background-color: #be1035;
+    }
+
+    .buttimg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .logo {
+        height: 4rem;
+        width: 7rem;
+        border-radius: 0.5rem;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    #search {
+        display: none;
+
+    }
+
+    #search::placeholder {
+        display: none;
+    }
+
+    #search-button {
+        display: none;
+
+    }
+
+    #search-button:hover {
+        display: none;
+    }
+
+    .visitormain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
+    .visitorLogo {
+        margin-top: 1rem;
+        height: 3rem;
+    }
+
+    .Visitorpara {
+        color: white;
+        font-size: 10px;
+    }
+
+    .HomeSection {
+        display: none;
+    }
+
+    .HomeSection a {
+        display: none;
+    }
+
+    .HomeHover {
+        display: none;
+    }
+
+    .HomeHover:hover {
+        display: none;
+    }
+
+    .RunningBanner {
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .runningbannerimages {
+        height: 500px;
+    }
+
+    /* Top Selling Products Cards */
+    .Topsellhead {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .product {
+        border-color: #ccc;
+        padding: 20px;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+    }
+
+    .product button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:focus {
+        background-color: #007bff;
+    }
+
+    .product button:active {
+        background-color: #0056b3;
+    }
+
+
+
+    /* Selling Bundle Cards  */
+    .cardupperheading {
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 3rem;
+    }
+
+    .cardupperpara {
+        text-align: center;
+        font: 1rem sans-serif;
+    }
+
+    .MaincardHead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .Cardone {
+        padding: 2rem;
+        border: lightgray solid 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        margin-top: 8rem !important;
+        opacity: 0;
+    }
+
+    .Cardone:hover {
+        border: #00000088 solid 5px;
+        transition: 0.5s ease-out;
+    }
+
+    .cardimages {
+        height: 350px;
+        width: 190px;
+    }
+
+    .Cardonehead {
+        padding-top: 1rem;
+    }
+
+    .cardonepara u:hover {
+        cursor: pointer;
+        color: #be1035;
+        text-decoration: none;
+    }
+
+    @-webkit-keyframes cardslideup {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes cardslideup {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .Cardtwo {
+        padding: 2rem;
+        border: lightgray solid 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        margin-bottom: 8rem !important;
+        opacity: 0;
+    }
+
+    .Cardtwo:hover {
+        border: #00000088 solid 5px;
+        transition: 0.5s ease-out;
+    }
+
+    .Cardtwohead {
+        padding-top: 1rem;
+    }
+
+    .cardtwopara u:hover {
+        color: #be1035;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @-webkit-keyframes cardslidedown {
+        from {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes cardslidedown {
+        from {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+            visibility: visible;
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .MaincardHead {
+        flex-wrap: wrap;
+    }
+
+    .Cardone,
+    .Cardtwo {
+        margin: 1rem 0;
+    }
+
+    .product {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    /*Products Cards */
+    .MainProductContainer {
+        padding-top: 200px;
+    }
+
+
+    .ProductcardHead {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .product {
+        border: lightgray solid 3px;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+        text-align: left justify;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .product button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:hover {
+        background-color: #0056b3;
+    }
+
+
+    /* Modal Setup */
+    .Modalbody {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ProductHeadingModal {
+        font-size: 25px;
+        text-align: center justify;
+    }
+
+    .ProductDescriptionModal {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .ProductImageModal {
+        height: 450px;
+    }
+
+    .PriceAndQuantity {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AddtoCartButt {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .AddtoCartButt:hover {
+        background-color: #0056b3;
+    }
+
+    .quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity button {
+        padding: 5px 10px;
+        border: 1px solid #007bff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .quantity input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #007bff;
+    }
+
+    .decrease,
+    .increase {
+        border: #007bff solid 1px;
+        border-radius: 3px;
+    }
+
+    /*  */
+    .MobilehomeSection {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: left 1s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
         background-color: white;
         padding: 20px;
         height: 100%;
@@ -952,6 +1671,127 @@
         margin: 1rem 0;
     }
 
+    /*Products Cards */
+    .MainProductContainer {
+        padding-top: 200px;
+    }
+
+
+    .ProductcardHead {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .product {
+        border: lightgray solid 3px;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+        text-align: left justify;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .product button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:hover {
+        background-color: #0056b3;
+    }
+
+
+    /* Modal Setup */
+    .Modalbody {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ProductHeadingModal {
+        font-size: 25px;
+        text-align: center justify;
+    }
+
+    .ProductDescriptionModal {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .ProductImageModal {
+        height: 450px;
+    }
+
+    .PriceAndQuantity {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AddtoCartButt {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .AddtoCartButt:hover {
+        background-color: #0056b3;
+    }
+
+    .quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity button {
+        padding: 5px 10px;
+        border: 1px solid #007bff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .quantity input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #007bff;
+    }
+
+    .decrease,
+    .increase {
+        border: #007bff solid 1px;
+        border-radius: 3px;
+    }
+
+    /*  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -960,7 +1800,7 @@
         transition: left 1s ease;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
         background-color: white;
         padding: 20px;
         height: 100%;
@@ -1428,6 +2268,127 @@
         }
     }
 
+    /*Products Cards */
+    .MainProductContainer {
+        padding-top: 200px;
+    }
+
+
+    .ProductcardHead {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .product {
+        border: lightgray solid 3px;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 16px;
+        text-align: left justify;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .product button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:hover {
+        background-color: #0056b3;
+    }
+
+
+    /* Modal Setup */
+    .Modalbody {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ProductHeadingModal {
+        font-size: 24px;
+        text-align: center justify;
+    }
+
+    .ProductDescriptionModal {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .ProductImageModal {
+        height: 450px;
+    }
+
+    .PriceAndQuantity {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AddtoCartButt {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 7px 13px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .AddtoCartButt:hover {
+        background-color: #0056b3;
+    }
+
+    .quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity button {
+        padding: 5px 10px;
+        border: 1px solid #007bff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .quantity input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #007bff;
+    }
+
+    .decrease,
+    .increase {
+        border: #007bff solid 1px;
+        border-radius: 3px;
+    }
+
+    /*  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -1436,7 +2397,7 @@
         transition: left 1s ease;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
         background-color: white;
         padding: 20px;
         height: 100%;
@@ -1762,58 +2723,9 @@
         background-color: #0056b3;
     }
 
-    @-webkit-keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
 
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
 
-    @keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @-webkit-keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
+    /* Selling Bundle Cards */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -1963,6 +2875,126 @@
         }
     }
 
+    /*Products Cards */
+    .MainProductContainer {
+        padding-top: 200px;
+    }
+
+
+    .ProductcardHead {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .rowcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .product {
+        border: lightgray solid 3px;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 12px;
+        text-align: left justify;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+    }
+
+    .product button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 1px 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .product button:hover {
+        background-color: #0056b3;
+    }
+
+
+    /* Modal Setup */
+    .Modalbody {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ProductHeadingModal {
+        font-size: 18px;
+        text-align: center justify;
+    }
+
+    .ProductDescriptionModal {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .ProductImageModal {
+        height: 300px;
+    }
+
+    .PriceAndQuantity {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AddtoCartButt {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .AddtoCartButt:hover {
+        background-color: #0056b3;
+    }
+
+    .quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity button {
+        padding: 5px 10px;
+        border: 1px solid #007bff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .quantity input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #007bff;
+    }
+
+    .decrease,
+    .increase {
+        border: #007bff solid 1px;
+        border-radius: 3px;
+    }
+
+    /*For Mobile Screen NavBarSetup  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -1970,7 +3002,7 @@
         transition: left 1s ease;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
         background-color: white;
         padding: 20px;
         height: 100%;
@@ -1993,6 +3025,7 @@
         transition: 1s ease-out;
     }
 
+    /* Footer */
     footer {
         background-color: #f2f2f2;
         padding: 10px;
