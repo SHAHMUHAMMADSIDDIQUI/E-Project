@@ -377,6 +377,7 @@ const PerfumesProducts = [
         price: "$29.00"
     },
 ]
+
 function AutocardGenerator() {
     const faceproductscontainer = document.getElementById("FaceProductsContainer");
     const bodyproductscontainer = document.getElementById("BodyProductsContainer");
@@ -384,6 +385,8 @@ function AutocardGenerator() {
     const hairproductscontainer = document.getElementById("HairProductsContainer");
     const makeupproductscontainer = document.getElementById("MakeupProductsContainer");
     const perfumesproductscontainer = document.getElementById("PerfumesProductsContainer");
+
+
     /* Face Products Generator */
     FaceProducts.forEach(product => {
         faceproductscontainer.innerHTML +=
@@ -395,6 +398,7 @@ function AutocardGenerator() {
         <button data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')">Quick Overview</button>
       `
     });
+
 
     /* Body Products Generators */
     BodyProducts.forEach(product => {
@@ -457,3 +461,241 @@ function AutocardGenerator() {
     });
 }
 window.onload = AutocardGenerator;
+
+
+// Function to generate HTML for a product
+function generateProductHTML(product) {
+    return `
+   <div class="col-5 col-lg-3 product">
+   <img src="${product.image}" alt="${product.name}">
+   <h3>${product.name}</h3>
+   <p>${product.price}</p>
+   <button data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')">Quick Overview</button>
+    `;
+}
+
+// Function to apply filter
+function applyFilter() {
+    const minPrice = parseFloat(document.getElementById('minPrice').value);
+    const maxPrice = parseFloat(document.getElementById('maxPrice').value);
+
+    if (isNaN(minPrice) || isNaN(maxPrice) || minPrice < 0 || maxPrice < 0 || minPrice > maxPrice) {
+        alert('Please enter valid price range.');
+        return;
+    }
+
+
+
+    /*Filtering For FaceProducts  */
+    const filteredface = FaceProducts.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+        return price >= minPrice && price <= maxPrice;
+    });
+
+    const facecontainer = document.getElementById('FaceProductsContainer');
+    facecontainer.innerHTML = ''; // Clear previous content
+
+    if (filteredface.length > 0) {
+        filteredface.forEach(product => {
+            facecontainer.innerHTML += generateProductHTML(product);
+        });
+    } else {
+        facecontainer.innerHTML = '<p>No products available in the specified price range.</p>';
+    }
+
+
+
+    /*Filtering For FaceProducts  */
+    const filteredbody = BodyProducts.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+        return price >= minPrice && price <= maxPrice;
+    });
+
+    const bodycontainer = document.getElementById('BodyProductsContainer');
+    bodycontainer.innerHTML = ''; // Clear previous content
+
+    if (filteredbody.length > 0) {
+        filteredbody.forEach(product => {
+            bodycontainer.innerHTML += generateProductHTML(product);
+        });
+    } else {
+        bodycontainer.innerHTML = '<p>No products available in the specified price range.</p>';
+    }
+
+
+
+
+    /*Filtering For SunScreensProducts  */
+    const filteredsunscreen = SunScreenProducts.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+        return price >= minPrice && price <= maxPrice;
+    });
+
+    const sunscreenContainer = document.getElementById('SunScreenProductsContainer');
+    sunscreenContainer.innerHTML = ''; // Clear previous content
+
+    if (filteredsunscreen.length > 0) {
+        filteredsunscreen.forEach(product => {
+            sunscreenContainer.innerHTML += generateProductHTML(product);
+        });
+    } else {
+        sunscreenContainer.innerHTML = '<p>No products available in the specified price range.</p>';
+    }
+
+
+
+    /*Filtering For Hair  */
+    const filteredhair = HairProducts.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+        return price >= minPrice && price <= maxPrice;
+    });
+
+    const haircontainer = document.getElementById('HairProductsContainer');
+    haircontainer.innerHTML = ''; // Clear previous content
+
+    if (filteredhair.length > 0) {
+        filteredhair.forEach(product => {
+            haircontainer.innerHTML += generateProductHTML(product);
+        });
+    } else {
+        haircontainer.innerHTML = '<p>No products available in the specified price range.</p>';
+    }
+
+
+
+    /*Filtering For MakeUp  */
+    const filteredMakeup = MakeupProducts.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+        return price >= minPrice && price <= maxPrice;
+    });
+
+    const makeupcontainer = document.getElementById('MakeupProductsContainer');
+    makeupcontainer.innerHTML = ''; // Clear previous content
+
+    if (filteredMakeup.length > 0) {
+        filteredMakeup.forEach(product => {
+            makeupcontainer.innerHTML += generateProductHTML(product);
+        });
+    } else {
+        makeupcontainer.innerHTML = '<p>No products available in the specified price range.</p>';
+    }
+
+
+
+
+    /*Filtering For Perfumes  */
+    const filteredperfumes = PerfumesProducts.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+        return price >= minPrice && price <= maxPrice;
+    });
+
+    const perfumescontainer = document.getElementById('PerfumesProductsContainer');
+    perfumescontainer.innerHTML = ''; // Clear previous content
+
+    if (filteredperfumes.length > 0) {
+        filteredperfumes.forEach(product => {
+            perfumescontainer.innerHTML += generateProductHTML(product);
+        });
+    } else {
+        perfumescontainer.innerHTML = '<p>No products available in the specified price range.</p>';
+    }
+}
+function resetFilter() {
+    // Reset the input fields
+    document.getElementById('minPrice').value = '0';
+    document.getElementById('maxPrice').value = '';
+
+    // Reset the product containers
+    resetContainer('FaceProductsContainer');
+    resetContainer('BodyProductsContainer');
+    resetContainer('SunScreenProductsContainer');
+    resetContainer('HairProductsContainer');
+    resetContainer('MakeupProductsContainer');
+    resetContainer('PerfumesProductsContainer');
+    AutocardGenerator();
+}
+
+function resetContainer(containerId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = '';
+}
+
+
+/* $(document).ready(function() {
+    $('#myCheckbox').change(function() {
+        if ($(this).is(':checked')) {
+            $('#Face').show();
+        } else {
+            $('#Face').hide();
+        }
+    });
+    $('#myCheckbox').change(function() {
+        if ($(this).is(':checked')) {
+            $('#Body').show();
+        } else {
+            $('#Body').hide();
+        }
+    });
+    $('#myCheckbox').change(function() {
+        if ($(this).is(':checked')) {
+            $('#SunScreen').show();
+        } else {
+            $('#SunScreen').hide();
+        }
+    });
+    $('#myCheckbox').change(function() {
+        if ($(this).is(':checked')) {
+            $('#Hair').show();
+        } else {
+            $('#Hair').hide();
+        }
+    });
+    $('#myCheckbox').change(function() {
+        if ($(this).is(':checked')) {
+            $('#Makeup').show();
+        } else {
+            $('#Makeup').hide();
+        }
+    });
+    $('#myCheckbox').change(function() {
+        if ($(this).is(':checked')) {
+            $('#Perfumes').show();
+        } else {
+            $('#Perfumes').hide();
+        }
+    });
+}); */
+
+$(document).ready(function () {
+    $("#All").click(function () {
+        $("#Body,#Face ,#Hair,#Makeup,#SunScreen,#Perfumes").show(1000);
+    });
+    $("#Facebutton").click(function () {
+        $("#Body,#SunScreen,#Hair,#Makeup,#Perfumes").hide(1000);
+        $("#Face").show(1000);
+    });
+
+    $("#Bodybutton").click(function () {
+        $("#Face,#SunScreen,#Hair,#Makeup,#Perfumes").hide(1000);
+        $("#Body").show(1000);
+    });
+
+    $("#SunScreenbutton").click(function () {
+        $("#Body,#Face ,#Hair,#Makeup,#Perfumes").hide(1000);
+        $("#SunScreen").show(1000);
+    });
+    
+    $("#Hairbutton").click(function () {
+        $("#Body,#Face ,#SunScreen,#Makeup,#Perfumes").hide(1000);
+        $("#Hair").show(1000);
+    });
+    $("#MakeUpbutton").click(function () {
+        $("#Body,#Face ,#Hair,#SunScreens,#Perfumes").hide(1000);
+        $("#Makeup").show(1000);
+    });
+    $("#Perfumesbutton").click(function () {
+        $("#Body,#Face ,#Hair,#Makeup,#SunScreens").hide(1000);
+        $("#Perfumes").show(1000);
+    });
+    
+});

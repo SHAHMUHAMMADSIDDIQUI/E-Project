@@ -65,29 +65,54 @@
     </header>
 
     <!-- Second Navbar -->
-    <div class="animate__animated animate__fadeIn HomeSection">
+    <section class="secondary-Navbar">
+        <div class="animate__animated animate__fadeIn HomeSection">
 
-        <a class="hvr-underline-from-center HomeHover" href="#lora">Home</a>
+            <a class="hvr-underline-from-center HomeHover" href="#lora">Home</a>
 
-        <a class="hvr-underline-from-center HomeHover" href="#Face">Face</a>
+            <a class="hvr-underline-from-center HomeHover" href="#Face">Face</a>
 
-        <a class="hvr-underline-from-center HomeHover" href="#Body">Body</a>
+            <a class="hvr-underline-from-center HomeHover" href="#Body">Body</a>
 
-        <a class="hvr-underline-from-center  HomeHover" href="#SunScreen">SunScreens</a>
+            <a class="hvr-underline-from-center  HomeHover" href="#SunScreen">SunScreens</a>
 
-        <a class="hvr-underline-from-center  HomeHover" href="#Hair">Hair</a>
+            <a class="hvr-underline-from-center  HomeHover" href="#Hair">Hair</a>
 
-        <a class="hvr-underline-from-center HomeHover" href="#Makeup">MakeUp</a>
+            <a class="hvr-underline-from-center HomeHover" href="#Makeup">MakeUp</a>
 
-        <a class="hvr-underline-from-center HomeHover" href="#Perfumes">Perfumes</a>
+            <a class="hvr-underline-from-center HomeHover" href="#Perfumes">Perfumes</a>
 
-        <a class="hvr-underline-from-center  HomeHover" href="">About Us</a>
+            <a class="hvr-underline-from-center  HomeHover" href="">About Us</a>
 
-        <a class="hvr-underline-from-center  HomeHover" href="">FAQ's</a>
+            <a class="hvr-underline-from-center  HomeHover" href="">FAQ's</a>
 
-    </div>
+        </div>
+        <!-- Filter Drop Down -->
+        <div class="dropdown-center">
+            <img src="css/img/filter.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
+                aria-expanded="true"></img>
 
-
+            <ul class="dropdown-menu ffiltermenu">
+                <label for="minPrice">Minimum Price:</label>
+                <input type="number" id="minPrice" name="minPrice" value="0" min="0">
+                <label for="maxPrice">Maximum Price:</label>
+                <input type="number" id="maxPrice" name="maxPrice" min="0">
+                <button onclick="applyFilter()">Apply Filter</button>
+                <button id="resetFilterButton" onclick="resetFilter()">Reset Filter</button>
+                <hr>
+                <p class="Filtername"><b>Filter By Name</b> </p>
+                <div class="filter-name">
+                    <button id="All">ALL</button>
+                    <button id="Facebutton">Face</button>
+                    <button id="Bodybutton">Body</button>
+                    <button id="SunScreenbutton">SunScreen</button>
+                    <button id="Hairbutton">Hair</button>
+                    <button id="MakeUpbutton">MakeUp</button>
+                    <button id="Perfumesbutton">Perfumes</button>
+                </div>
+            </ul>
+        </div>
+    </section>
 
     <!--Running Banner -->
     <div id="carouselExampleInterval" class="carousel slide RunningBanner animate__animated animate__zoomIn"
@@ -222,6 +247,9 @@
 
     </section>
 
+
+
+
     <!-- Face Product Cards -->
     <section id="Face" class="MainProductContainer">
         <h5 class="animate__fadeIn ProductcardHead">Face</h5>
@@ -231,7 +259,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Body Product Cards -->
     <section id="Body" class="MainProductContainer">
@@ -387,7 +414,7 @@
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#Perfumes" onclick="toggleclass()">Perfumes</a>
+                <a class="nav-link" href="#Perfumes6" onclick="toggleclass()">Perfumes</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
@@ -404,6 +431,7 @@
     <footer>
         <marquee id="ticker" behavior="scroll" direction="left"></marquee>
     </footer>
+
 
     <script>
 
