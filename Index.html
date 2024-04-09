@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="css/Rensponsive.css">
     <!-- Animation.css -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awsome -->
     <!-- hover.css -->
     <link rel="stylesheet" href="css/hover.css">
     <!-- jQuer cdn -->
@@ -66,53 +71,43 @@
 
     <!-- Second Navbar -->
     <section class="secondary-Navbar">
-        <div class="animate__animated animate__fadeIn HomeSection">
-
+        <div class="HomeSection">
             <a class="hvr-underline-from-center HomeHover" href="#lora">Home</a>
-
             <a class="hvr-underline-from-center HomeHover" href="#Face">Face</a>
-
             <a class="hvr-underline-from-center HomeHover" href="#Body">Body</a>
-
-            <a class="hvr-underline-from-center  HomeHover" href="#SunScreen">SunScreens</a>
-
-            <a class="hvr-underline-from-center  HomeHover" href="#Hair">Hair</a>
-
+            <a class="hvr-underline-from-center HomeHover" href="#SunScreen">SunScreens</a>
+            <a class="hvr-underline-from-center HomeHover" href="#Hair">Hair</a>
             <a class="hvr-underline-from-center HomeHover" href="#Makeup">MakeUp</a>
-
             <a class="hvr-underline-from-center HomeHover" href="#Perfumes">Perfumes</a>
-
-            <a class="hvr-underline-from-center  HomeHover" href="">About Us</a>
-
-            <a class="hvr-underline-from-center  HomeHover" href="">FAQ's</a>
-
-        </div>
-        <!-- Filter Drop Down -->
-        <div class="dropdown-center">
-            <img src="css/img/filter.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
-                aria-expanded="true"></img>
-
-            <ul class="dropdown-menu ffiltermenu">
-                <label for="minPrice">Minimum Price:</label>
-                <input type="number" id="minPrice" name="minPrice" value="0" min="0">
-                <label for="maxPrice">Maximum Price:</label>
-                <input type="number" id="maxPrice" name="maxPrice" min="0">
-                <button onclick="applyFilter()">Apply Filter</button>
-                <button id="resetFilterButton" onclick="resetFilter()">Reset Filter</button>
-                <hr>
-                <p class="Filtername"><b>Filter By Name</b> </p>
-                <div class="filter-name">
-                    <button id="All">ALL</button>
-                    <button id="Facebutton">Face</button>
-                    <button id="Bodybutton">Body</button>
-                    <button id="SunScreenbutton">SunScreen</button>
-                    <button id="Hairbutton">Hair</button>
-                    <button id="MakeUpbutton">MakeUp</button>
-                    <button id="Perfumesbutton">Perfumes</button>
+            <a class="hvr-underline-from-center HomeHover" href="">About Us</a>
+            <a class="hvr-underline-from-center HomeHover" href="">FAQ's</a>
+            <div class="dropdown-center DropDownMenu">
+                <img src="css/img/filter.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                <div class="dropdown-menu ffiltermenu">
+                    <label class="priceName" for="minPrice">Minimum Price:</label>
+                    <input class="priceInput" type="number" id="minPrice" name="minPrice" value="0" min="0"><br>
+                    <label class="priceName" for="maxPrice">Maximum Price:</label>
+                    <input class="priceInput" type="number" id="maxPrice" name="maxPrice" min="0"><br>
+                    <button class="buttons" onclick="applyFilter()">Apply Filter</button><br><br>
+                    <button class="buttons" id="resetFilterButton" onclick="resetFilter()">Reset Filter</button>
+                    <hr>
+                    <p class="Filtername"><b>Filter By Name</b> </p>
+                    <div class="filter-name">
+                        <button class="buttons" id="All">ALL</button>
+                        <button class="buttons" id="Facebutton">Face</button>
+                        <button class="buttons" id="Bodybutton">Body</button><br>
+                        <button class="buttons" id="SunScreenbutton">SunScreen</button>
+                        <button class="buttons" id="Hairbutton">Hair</button>
+                        <button class="buttons" id="MakeUpbutton">MakeUp</button>
+                        <button class="buttons" id="Perfumesbutton">Perfumes</button>
+                    </div>
                 </div>
-            </ul>
+            </div>
         </div>
     </section>
+
+
 
     <!--Running Banner -->
     <div id="carouselExampleInterval" class="carousel slide RunningBanner animate__animated animate__zoomIn"
@@ -151,69 +146,12 @@
 
 
     <!-- Top Selling Product Cards -->
-    <section>
-        <h1 id="Topsellhead" class="animate__fadeIn Topsellhead">Top Selling Product</h1>
-        <div class="container-fluid">
-            <div class="row rowcontainer">
-                <div id="productone" class="col-5 col-lg-3 product">
-                    <img src="css/img/80088226_original_original_A.jpg" alt="Product 1 Image">
-                    <h3>Product 1</h3>
-                    <p>Description of Product 1 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div id="producttwo" class="col-5 col-lg-3 product">
-                    <img src="product2-image.jpg" alt="Product 2 Image">
-                    <h3>Product 2</h3>
-                    <p>Description of Product 2 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div id="productthree" class="col-5 col-lg-3 product">
-                    <img src="product3-image.jpg" alt="Product 3 Image">
-                    <h3>Product 3</h3>
-                    <p>Description of Product 3 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div id="productfour" class="col-5 col-lg-3 product">
-                    <img src="product4-image.jpg" alt="Product 4 Image">
-                    <h3>Product 4</h3>
-                    <p>Description of Product 4 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-
-                </div>
-
-                <div id="productfive" class="col-5 col-lg-3 product">
-                    <img src="product1-image.jpg" alt="Product 1 Image">
-                    <h3>Product 1</h3>
-                    <p>Description of Product 1 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div id="productsix" class="col-5 col-lg-3 product">
-                    <img src="product2-image.jpg" alt="Product 2 Image">
-                    <h3>Product 2</h3>
-                    <p>Description of Product 2 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div id="productseven" class="col-5 col-lg-3 product">
-                    <img src="product3-image.jpg" alt="Product 3 Image">
-                    <h3>Product 3</h3>
-                    <p>Description of Product 3 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div id="producteight" class="col-5 col-lg-3 product">
-                    <img src="product4-image.jpg" alt="Product 4 Image">
-                    <h3>Product 4</h3>
-                    <p>Description of Product 4 goes here.</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
+    <!-- Face Product Cards -->
+    <section  class="MainProductContainer">
+        <h5 class="animate__fadeIn ProductcardHead">Top Selling Products</h5>
+        <div class="container">
+            <div class="row rowcontainer" id="TopSellingContainer">
+                <!-- Product cards will be dynamically added here -->
             </div>
         </div>
     </section>
@@ -247,7 +185,26 @@
 
     </section>
 
-
+    <!-- About Us Section's Start-->
+    <div class="about-container">
+        <div class="Abcontainer">
+            <div class="row">
+                <div class="col-md-6 sec1">
+                </div>
+                <div class="col-md-6 sec2">
+                    <h2 class="about-text">About Us</h2>
+                    <p>"Clarin Cosmetic is a trusted brand synonymous with skincare and beauty excellence. With decades
+                        of expertise, we blend cutting-edge research with natural ingredients to create innovative
+                        products that deliver visible results. Committed to transparency and sustainability, we
+                        prioritize ethical sourcing and cruelty-free practices. Our mission is simple: to empower
+                        individuals to embrace their unique beauty while promoting health and well-being. Join us on our
+                        journey to radiant skin and confidence, where every product reflects our dedication to quality,
+                        integrity, and inclusivity." </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section's End-->
 
 
     <!-- Face Product Cards -->
@@ -390,40 +347,67 @@
             </div>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#lora" onclick="toggleclass()">Home</a>
+                <a class="nav-link nav-para" href="#lora" onclick="toggleclass()">Home</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#Face" onclick="toggleclass()">Face</a>
+                <a class="nav-link nav-para" href="#Face" onclick="toggleclass()">Face</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#Body" onclick="toggleclass()">Body</a>
+                <a class="nav-link nav-para" href="#Body" onclick="toggleclass()">Body</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#SunScreen" onclick="toggleclass()">SunScreens</a>
+                <a class="nav-link nav-para" href="#SunScreen" onclick="toggleclass()">SunScreens</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#Hair" onclick="toggleclass()">Hair</a>
+                <a class="nav-link nav-para" href="#Hair" onclick="toggleclass()">Hair</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item ">
+                <a class="nav-link nav-para" href="#Makeup" onclick="toggleclass()">MakeUp</a>
+            </il>
+            <hr style="color: black;">
+            <il class="nav-item ">
+                <a class="nav-link nav-para" href="#Perfumes6" onclick="toggleclass()">Perfumes</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#Makeup" onclick="toggleclass()">MakeUp</a>
+                <a class="nav-link nav-para" href="" onclick="toggleclass()">About Us</a>
             </il>
             <hr style="color: black;">
             <il class="nav-item">
-                <a class="nav-link" href="#Perfumes6" onclick="toggleclass()">Perfumes</a>
+                <a class="nav-link nav-para" href="" onclick="toggleclass()">FAQ's</a>
             </il>
             <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link" href="" onclick="toggleclass()">About Us</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link" href="" onclick="toggleclass()">FAQ's</a>
-            </il>
+            <div class="dropdown-center dropend DropDownMenu">
+                <img src="css/img/filter - Copy.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                <p class="nav-para">Filter</p>
+                <div class="dropdown-menu ffiltermenu">
+                    <label class="priceName" for="minPrice">Minimum Price:</label>
+                    <input class="priceInput" type="number" id="mminPrice" name="minPrice" value="0" min="0">
+                    <label class="priceName" for="maxPrice">Maximum Price:</label>
+                    <input class="priceInput" type="number" id="mmaxPrice" name="maxPrice" min="0">
+                    <button class="buttons" onclick="aapplyFilter(toggleclass())">Apply
+                        Filter</button><br><br>
+                    <button class="buttons" id="resetFilterButton" onclick="rresetFilter(toggleclass())">Reset
+                        Filter</button>
+                    <hr>
+                    <p class="Filtername"><b>Filter By Name</b> </p>
+                    <div class="filter-name">
+                        <button class="buttons" onclick="toggleclass()" id="AAll">ALL</button>
+                        <button class="buttons" onclick="toggleclass()" id="FFacebutton">Face</button>
+                        <button class="buttons" onclick="toggleclass()" id="BBodybutton">Body</button><br>
+                        <button class="buttons" onclick="toggleclass()" id="SSunScreenbutton">SunScreen</button>
+                        <button class="buttons" onclick="toggleclass()" id="HHairbutton">Hair</button>
+                        <button class="buttons" onclick="toggleclass()" id="MMakeUpbutton">MakeUp</button>
+                        <button class="buttons" onclick="toggleclass()" id="PPerfumesbutton">Perfumes</button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -431,6 +415,80 @@
     <footer>
         <marquee id="ticker" behavior="scroll" direction="left"></marquee>
     </footer>
+
+
+
+    <!-- Contact Us Section & Form Start -->
+    <div class="contact-container">
+        <div class="Abcontact">
+            <div class="row">
+                <div class="col-md-4 cont1">
+                    <div class="cont-icon-locate"><i class="fas fa-map-marker-alt locate-icon"></i></div>
+                    <div class="cont-content-body">
+                        <h3 class="cont-heading">address</h3>
+                        <h6 class="cont-heading-2">Main branch in Shara e Faisal</h6>
+                        <h6 class="cont-heading-2">Ground Floor<br>Contact +92 45317565</h6>
+                        <h6 class="cont-heading-2">Second branch in DHA Phase 2</h6>
+                        <h6 class="cont-heading-2">First Floor<br>Contact +92 45317565</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 cont2">
+                    <h2 class="cont2-heading-1">get in touch</h2>
+                    <div class="cont-icon-locate-2"><i class="fas fa-phone-alt locate-icon"></i></div>
+                    <div class="cont-content-body-2">
+                        <h3 class="cont-heading">phone</h3>
+                        <h6 class="cont-heading-2">Main branch in Shara e Faisal</h6>
+                        <h6 class="cont-heading-2">Ground Floor<br>Contact +92 45317565</h6>
+                        <h6 class="cont-heading-2">Second branch in DHA Phase 2</h6>
+                        <h6 class="cont-heading-2">First Floor<br>Contact +92 45317565</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 cont3">
+                    <div class="cont-icon-locate"><i class="fas fa-envelope locate-icon"></i></div>
+                    <div class="cont-content-body">
+                        <h3 class="cont-heading">email</h3>
+                        <h6 class="cont-heading-2">info@clarin.com</h6>
+                        <h6 class="cont-heading-2">sales@clarin.com</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="second-row-cont">
+                <div class="col-md-6 cont4">
+                    <h2 class="second-cont-text">Message Us</h2>
+                    <div class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                        doloribus vitae ducimus eos eveniet amet porro in. Numquam quia minima natus incidunt cupiditate
+                        consectetur debitis!
+                    </div>
+                    <div class="logo-2"><img src="css/img/merchant_image-merchant_open_graph.png" alt=""></div>
+                </div>
+                <div class="col-md-6 cont5">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-6" id="form-bx">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col-6" id="form-bx">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="col-6" id="form-bx">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                            </div>
+                            <div class="form-floating" id="form-bx">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Message</label>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit" id="form-bx-btn">Submit form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us Section & form End-->
 
 
     <script>
