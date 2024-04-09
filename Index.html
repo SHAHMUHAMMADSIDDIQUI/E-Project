@@ -1,528 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Rensponvise.css -->
-    <link rel="stylesheet" href="css/Rensponsive.css">
+    <link rel="stylesheet" href="css/Rensponsive.css" />
     <!-- Animation.css -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- font awsome -->
     <!-- hover.css -->
-    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/hover.css" />
     <!-- jQuer cdn -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <!-- jQuer cdn -->
     <title>Beauty Portal</title>
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <!-- Upper Section-->
     <section id="lora" class="UpperSec">
-        <div>
-            <p class="text para1"><b>Free Shipping</b> With Any $50+ Order</p>
-            <p class="text para2"><b>3 Free Samples</b> With Any Order</p>
-            <p class="text para3">Recive a <b>5-Piece Welcome Gifts</b> With Your Frist $75+ Order</p>
-        </div>
+      <div>
+        <p class="text para1"><b>Free Shipping</b> With Any $50+ Order</p>
+        <p class="text para2"><b>3 Free Samples</b> With Any Order</p>
+        <p class="text para3">
+          Recive a <b>5-Piece Welcome Gifts</b> With Your Frist $75+ Order
+        </p>
+      </div>
     </section>
 
-
     <header>
+      <section>
+        <!--Main Logo Here  -->
+        <div>
+          <div>
+            <button onclick="toggleclass()" class="butt">
+              <img
+                class="buttimg"
+                src="css/img/list-removebg-preview.png"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <img
+            src="css/img/merchant_image-merchant_open_graph.png"
+            alt="Reload"
+            class="logo"
+          />
+        </div>
+      </section>
+
+      <section class="visitor-container">
         <section>
-            <!--Main Logo Here  -->
-            <div>
-                <div>
-                    <button onclick="toggleclass()" class="butt"><img class="buttimg"
-                            src="css/img/list-removebg-preview.png" alt=""></button>
-                </div>
-
-                <img src="css/img/merchant_image-merchant_open_graph.png" alt="Reload" class="logo">
-            </div>
+          <!--Search Bar And Search Button Here  -->
+          <div class="search-container">
+            <input type="text" id="search" placeholder="Search..." />
+            <button id="search-button"></button>
+          </div>
         </section>
 
-        <section class="visitor-container">
-            <section>
-                <!--Search Bar And Search Button Here  -->
-                <div class="search-container">
-                    <input type="text" id="search" placeholder="Search...">
-                    <button id="search-button"></button>
-                </div>
-            </section>
-
-            <!-- Visiotor Logo And Visitor Count Here -->
-            <div class="visitormain">
-                <img src="css/img/group (1).png" alt="Reload" class="visitorLogo">
-                <p class="Visitorpara"> Visitor Count: <span id="visitor-count">0</span></p>
-            </div>
-        </section>
+        <!-- Visiotor Logo And Visitor Count Here -->
+        <div class="visitormain">
+          <img src="css/img/group (1).png" alt="Reload" class="visitorLogo" />
+          <p class="Visitorpara">
+            Visitor Count: <span id="visitor-count">0</span>
+          </p>
+        </div>
+      </section>
     </header>
 
     <!-- Second Navbar -->
     <section class="secondary-Navbar">
-        <div class="HomeSection">
-            <a class="hvr-underline-from-center HomeHover" href="#lora">Home</a>
-            <a class="hvr-underline-from-center HomeHover" href="#Face">Face</a>
-            <a class="hvr-underline-from-center HomeHover" href="#Body">Body</a>
-            <a class="hvr-underline-from-center HomeHover" href="#SunScreen">SunScreens</a>
-            <a class="hvr-underline-from-center HomeHover" href="#Hair">Hair</a>
-            <a class="hvr-underline-from-center HomeHover" href="#Makeup">MakeUp</a>
-            <a class="hvr-underline-from-center HomeHover" href="#Perfumes">Perfumes</a>
-            <a class="hvr-underline-from-center HomeHover" href="">About Us</a>
-            <a class="hvr-underline-from-center HomeHover" href="">FAQ's</a>
-            <div class="dropdown-center DropDownMenu">
-                <img src="css/img/filter.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                <div class="dropdown-menu ffiltermenu">
-                    <label class="priceName" for="minPrice">Minimum Price:</label>
-                    <input class="priceInput" type="number" id="minPrice" name="minPrice" value="0" min="0"><br>
-                    <label class="priceName" for="maxPrice">Maximum Price:</label>
-                    <input class="priceInput" type="number" id="maxPrice" name="maxPrice" min="0"><br>
-                    <button class="buttons" onclick="applyFilter()">Apply Filter</button><br><br>
-                    <button class="buttons" id="resetFilterButton" onclick="resetFilter()">Reset Filter</button>
-                    <hr>
-                    <p class="Filtername"><b>Filter By Name</b> </p>
-                    <div class="filter-name">
-                        <button class="buttons" id="All">ALL</button>
-                        <button class="buttons" id="Facebutton">Face</button>
-                        <button class="buttons" id="Bodybutton">Body</button><br>
-                        <button class="buttons" id="SunScreenbutton">SunScreen</button>
-                        <button class="buttons" id="Hairbutton">Hair</button>
-                        <button class="buttons" id="MakeUpbutton">MakeUp</button>
-                        <button class="buttons" id="Perfumesbutton">Perfumes</button>
-                    </div>
-                </div>
+      <div class="HomeSection">
+        <a class="hvr-underline-from-center HomeHover" href="#lora">Home</a>
+        <a class="hvr-underline-from-center HomeHover" href="#Face">Face</a>
+        <a class="hvr-underline-from-center HomeHover" href="#Body">Body</a>
+        <a class="hvr-underline-from-center HomeHover" href="#SunScreen"
+          >SunScreens</a
+        >
+        <a class="hvr-underline-from-center HomeHover" href="#Hair">Hair</a>
+        <a class="hvr-underline-from-center HomeHover" href="#Makeup">MakeUp</a>
+        <a class="hvr-underline-from-center HomeHover" href="#Perfumes"
+          >Perfumes</a
+        >
+        <a class="hvr-underline-from-center HomeHover" href="">About Us</a>
+        <a class="hvr-underline-from-center HomeHover" href="">FAQ's</a>
+        <div class="dropdown-center DropDownMenu">
+          <img
+            src="css/img/filter.png"
+            class="dropdown-toggle filterimg"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          />
+          <div class="dropdown-menu ffiltermenu">
+            <label class="priceName" for="minPrice">Minimum Price:</label>
+            <input
+              class="priceInput"
+              type="number"
+              id="minPrice"
+              name="minPrice"
+              value="0"
+              min="0"
+            /><br />
+            <label class="priceName" for="maxPrice">Maximum Price:</label>
+            <input
+              class="priceInput"
+              type="number"
+              id="maxPrice"
+              name="maxPrice"
+              min="0"
+            /><br />
+            <button class="buttons" onclick="applyFilter()">Apply Filter</button
+            ><br /><br />
+            <button
+              class="buttons"
+              id="resetFilterButton"
+              onclick="resetFilter()"
+            >
+              Reset Filter
+            </button>
+            <hr />
+            <p class="Filtername"><b>Filter By Name</b></p>
+            <div class="filter-name">
+              <button class="buttons" id="All">ALL</button>
+              <button class="buttons" id="Facebutton">Face</button>
+              <button class="buttons" id="Bodybutton">Body</button><br />
+              <button class="buttons" id="SunScreenbutton">SunScreen</button>
+              <button class="buttons" id="Hairbutton">Hair</button>
+              <button class="buttons" id="MakeUpbutton">MakeUp</button>
+              <button class="buttons" id="Perfumesbutton">Perfumes</button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-
     <!--Running Banner -->
-    <div id="carouselExampleInterval" class="carousel slide RunningBanner animate__animated animate__zoomIn"
-        data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
-                style="background-color: #333333;" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
-                style="background-color: #333333" ; aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
-                style="background-color: #333333" ; aria-label="Slide 3"></button>
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide RunningBanner animate__animated animate__zoomIn"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="0"
+          class="active"
+          style="background-color: #333333"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="1"
+          style="background-color: #333333"
+          ;
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="2"
+          style="background-color: #333333"
+          ;
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="css/img/Clarin Banner 1.png"
+            class="d-block w-100 runningbannerimages"
+            alt="..."
+          />
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="css/img/Clarin Banner 1.png" class="d-block w-100 runningbannerimages" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2500">
-                <img src="css/img/Clarin Banner 2.jpg" ; class="d-block w-100 runningbannerimages" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="css/img/Clarin Banner 3.jpg" ; class="d-block w-100 runningbannerimages" alt="...">
-            </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img
+            src="css/img/Clarin Banner 2.jpg"
+            ;
+            class="d-block w-100 runningbannerimages"
+            alt="..."
+          />
         </div>
-        <button class="carousel-control-prev btn-black" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next btn-black" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="css/img/Clarin Banner 3.jpg"
+            ;
+            class="d-block w-100 runningbannerimages"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev btn-black"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next btn-black"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-
-
 
     <!-- Top Selling Product Cards -->
     <!-- Face Product Cards -->
-    <section  class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">Top Selling Products</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="TopSellingContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+    <section class="MainProductContainer">
+      <h5 class="animate__fadeIn ProductcardHead">Top Selling Products</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="TopSellingContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
-
 
     <!--  Selling Bundle Cards   -->
     <h2 class="cardupperheading">Your skin. Our expertise.</h2>
     <p class="cardupperpara">DISCOVER OUR PLANT-POWERED FORMULAS</p>
-    <section class=" container MaincardHead">
-
-        <span id="Cardone" class="col-5 col-lg-3 Cardone">
-            <img class="cardimages" src="css/img/Card 1.jpg" alt="">
-            <h7 class="Cardonehead"> MAKEUP</h7>
-            <p class="cardonepara"><u>SHOP NOW</u></p>
-        </span>
-        <span id="Cardtwo" class="col-5 col-lg-3 Cardtwo">
-            <img class="cardimages" src="css/img/Card 2.JPG" alt="">
-            <h7 class="Cardtwohead"> MAKEUP</h7>
-            <p class="cardtwopara"><u>SHOP NOW</u></p>
-        </span>
-        <span id="Cardthree" class="col-5 col-lg-3 Cardone">
-            <img class="cardimages" src="css/img/Card 3.jpg" alt="">
-            <h7 class="Cardonehead"> MAKEUP</h7>
-            <p class="cardonepara"><u>SHOP NOW</u></p>
-        </span>
-        <span id="Cardfour" class="col-5 col-lg-3 Cardtwo">
-            <img class="cardimages" src="css/img/Card 4.jpg" alt="">
-            <h7 class="Cardtwohead"> MAKEUP</h7>
-            <p class="cardtwopara"><u>SHOP NOW</u></p>
-        </span>
-
+    <section class="container MaincardHead">
+      <span id="Cardone" class="col-5 col-lg-3 Cardone">
+        <img class="cardimages" src="css/img/Card 1.jpg" alt="" />
+        <h7 class="Cardonehead"> MAKEUP</h7>
+        <p class="cardonepara"><u>SHOP NOW</u></p>
+      </span>
+      <span id="Cardtwo" class="col-5 col-lg-3 Cardtwo">
+        <img class="cardimages" src="css/img/Card 2.JPG" alt="" />
+        <h7 class="Cardtwohead"> MAKEUP</h7>
+        <p class="cardtwopara"><u>SHOP NOW</u></p>
+      </span>
+      <span id="Cardthree" class="col-5 col-lg-3 Cardone">
+        <img class="cardimages" src="css/img/Card 3.jpg" alt="" />
+        <h7 class="Cardonehead"> MAKEUP</h7>
+        <p class="cardonepara"><u>SHOP NOW</u></p>
+      </span>
+      <span id="Cardfour" class="col-5 col-lg-3 Cardtwo">
+        <img class="cardimages" src="css/img/Card 4.jpg" alt="" />
+        <h7 class="Cardtwohead"> MAKEUP</h7>
+        <p class="cardtwopara"><u>SHOP NOW</u></p>
+      </span>
     </section>
 
     <!-- About Us Section's Start-->
     <div class="about-container">
-        <div class="Abcontainer">
-            <div class="row">
-                <div class="col-md-6 sec1">
-                </div>
-                <div class="col-md-6 sec2">
-                    <h2 class="about-text">About Us</h2>
-                    <p>"Clarin Cosmetic is a trusted brand synonymous with skincare and beauty excellence. With decades
-                        of expertise, we blend cutting-edge research with natural ingredients to create innovative
-                        products that deliver visible results. Committed to transparency and sustainability, we
-                        prioritize ethical sourcing and cruelty-free practices. Our mission is simple: to empower
-                        individuals to embrace their unique beauty while promoting health and well-being. Join us on our
-                        journey to radiant skin and confidence, where every product reflects our dedication to quality,
-                        integrity, and inclusivity." </p>
-                </div>
-            </div>
+      <div class="Abcontainer">
+        <div class="row">
+          <div class="col-md-6 sec1"></div>
+          <div class="col-md-6 sec2">
+            <h2 class="about-text">About Us</h2>
+            <p>
+              "Clarin Cosmetic is a trusted brand synonymous with skincare and
+              beauty excellence. With decades of expertise, we blend
+              cutting-edge research with natural ingredients to create
+              innovative products that deliver visible results. Committed to
+              transparency and sustainability, we prioritize ethical sourcing
+              and cruelty-free practices. Our mission is simple: to empower
+              individuals to embrace their unique beauty while promoting health
+              and well-being. Join us on our journey to radiant skin and
+              confidence, where every product reflects our dedication to
+              quality, integrity, and inclusivity."
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <!-- About Us Section's End-->
 
-
     <!-- Face Product Cards -->
     <section id="Face" class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">Face</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="FaceProductsContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+      <h5 class="animate__fadeIn ProductcardHead">Face</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="FaceProductsContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
 
     <!-- Body Product Cards -->
     <section id="Body" class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">Body</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="BodyProductsContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+      <h5 class="animate__fadeIn ProductcardHead">Body</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="BodyProductsContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
-
 
     <!-- SunScreen Product Cards -->
     <section id="SunScreen" class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">SunScreen</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="SunScreenProductsContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+      <h5 class="animate__fadeIn ProductcardHead">SunScreen</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="SunScreenProductsContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
-
 
     <!-- Hair Product Cards -->
     <section id="Hair" class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">Hair</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="HairProductsContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+      <h5 class="animate__fadeIn ProductcardHead">Hair</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="HairProductsContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
-
 
     <!-- Makeup Product Cards -->
     <section id="Makeup" class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">MakeUp</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="MakeupProductsContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+      <h5 class="animate__fadeIn ProductcardHead">MakeUp</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="MakeupProductsContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
-
 
     <!-- Perfumes Product Cards -->
     <section id="Perfumes" class="MainProductContainer">
-        <h5 class="animate__fadeIn ProductcardHead">Perfumes</h5>
-        <div class="container">
-            <div class="row rowcontainer" id="PerfumesProductsContainer">
-                <!-- Product cards will be dynamically added here -->
-            </div>
+      <h5 class="animate__fadeIn ProductcardHead">Perfumes</h5>
+      <div class="container">
+        <div class="row rowcontainer" id="PerfumesProductsContainer">
+          <!-- Product cards will be dynamically added here -->
         </div>
+      </div>
     </section>
 
-
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h6 class="modal-title fs-5" id="exampleModalLabel">Modal title</h6>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h6 class="modal-title fs-5" id="exampleModalLabel">Modal title</h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body Modalbody">
+            <!-- Carousel image -->
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    id="ProductImage1"
+                    src="..."
+                    class="ProductImageModal d-block w-100"
+                    alt="Product Image"
+                  />
                 </div>
-                <!-- Modal Body -->
-                <div class="modal-body Modalbody">
-                    <!-- Carousel image -->
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img id="ProductImage1" src="..." class="ProductImageModal d-block w-100"
-                                    alt="Product Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img id="ProductImage2" src="..." class="ProductImageModal d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img id="ProductImage3" src="..." class="ProductImageModal d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"
-                                style="background-color: #333333; border-radius: 3px; " aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"
-                                style="background-color: #333333; border-radius: 3px;" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-
-
-                    <h3 class="ProductHeadingModal" id="ProductHeading"></h3>
-                    <p class="ProductDescriptionModal" id="ProductDescription"></p>
-                    <div class="PriceAndQuantity">
-                        <p style="margin-top: 15px; margin-right: 10px;" id="ProductPrice"></p>
-                        <div class="quantity">
-                            <p style="margin-top: 15px; margin-right: 10px;">Quantity</p>
-                            <button class="decrease" onclick="decreaseQuantity()">-</button>
-                            <input type="text" class="quantity" id="quantity" value="1">
-                            <button class="increase" onclick="increaseQuantity()">+</button>
-                        </div>
-                    </div>
-                    <button class="AddtoCartButt">Add To Cart</button>
+                <div class="carousel-item">
+                  <img
+                    id="ProductImage2"
+                    src="..."
+                    class="ProductImageModal d-block w-100"
+                    alt="..."
+                  />
                 </div>
-
+                <div class="carousel-item">
+                  <img
+                    id="ProductImage3"
+                    src="..."
+                    class="ProductImageModal d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  style="background-color: #333333; border-radius: 3px"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  style="background-color: #333333; border-radius: 3px"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+
+            <h3 class="ProductHeadingModal" id="ProductHeading"></h3>
+            <p class="ProductDescriptionModal" id="ProductDescription"></p>
+            <div class="PriceAndQuantity">
+              <p
+                style="margin-top: 15px; margin-right: 10px"
+                id="ProductPrice"
+              ></p>
+              <div class="quantity">
+                <p style="margin-top: 15px; margin-right: 10px">Quantity</p>
+                <button class="decrease" onclick="decreaseQuantity()">-</button>
+                <input type="text" class="quantity" id="quantity" value="1" />
+                <button class="increase" onclick="increaseQuantity()">+</button>
+              </div>
+            </div>
+            <button class="AddtoCartButt">Add To Cart</button>
+          </div>
         </div>
+      </div>
     </div>
-
-
-
 
     <!-- For Mobile Screen NavBarSetup -->
     <section>
-        <div id="MobilehomeSection" class="MobilehomeSection">
-
-            <div class="menubar">
-                <h4>MenuBar
-                    <button onclick="toggleclass()" style="border: none; background-color: #be1035;">
-                        <img style="height: 2rem;width: 2rem;" src="css/img/close-removebg-preview.png" alt="">
-                    </button>
-                </h4>
-            </div>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="#lora" onclick="toggleclass()">Home</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="#Face" onclick="toggleclass()">Face</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="#Body" onclick="toggleclass()">Body</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="#SunScreen" onclick="toggleclass()">SunScreens</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="#Hair" onclick="toggleclass()">Hair</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item ">
-                <a class="nav-link nav-para" href="#Makeup" onclick="toggleclass()">MakeUp</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item ">
-                <a class="nav-link nav-para" href="#Perfumes6" onclick="toggleclass()">Perfumes</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="" onclick="toggleclass()">About Us</a>
-            </il>
-            <hr style="color: black;">
-            <il class="nav-item">
-                <a class="nav-link nav-para" href="" onclick="toggleclass()">FAQ's</a>
-            </il>
-            <hr style="color: black;">
-            <div class="dropdown-center dropend DropDownMenu">
-                <img src="css/img/filter - Copy.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                <p class="nav-para">Filter</p>
-                <div class="dropdown-menu ffiltermenu">
-                    <label class="priceName" for="minPrice">Minimum Price:</label>
-                    <input class="priceInput" type="number" id="mminPrice" name="minPrice" value="0" min="0">
-                    <label class="priceName" for="maxPrice">Maximum Price:</label>
-                    <input class="priceInput" type="number" id="mmaxPrice" name="maxPrice" min="0">
-                    <button class="buttons" onclick="aapplyFilter(toggleclass())">Apply
-                        Filter</button><br><br>
-                    <button class="buttons" id="resetFilterButton" onclick="rresetFilter(toggleclass())">Reset
-                        Filter</button>
-                    <hr>
-                    <p class="Filtername"><b>Filter By Name</b> </p>
-                    <div class="filter-name">
-                        <button class="buttons" onclick="toggleclass()" id="AAll">ALL</button>
-                        <button class="buttons" onclick="toggleclass()" id="FFacebutton">Face</button>
-                        <button class="buttons" onclick="toggleclass()" id="BBodybutton">Body</button><br>
-                        <button class="buttons" onclick="toggleclass()" id="SSunScreenbutton">SunScreen</button>
-                        <button class="buttons" onclick="toggleclass()" id="HHairbutton">Hair</button>
-                        <button class="buttons" onclick="toggleclass()" id="MMakeUpbutton">MakeUp</button>
-                        <button class="buttons" onclick="toggleclass()" id="PPerfumesbutton">Perfumes</button>
-                    </div>
-                </div>
-            </div>
-
+      <div id="MobilehomeSection" class="MobilehomeSection">
+        <div class="menubar">
+          <h4>
+            MenuBar
+            <button
+              onclick="toggleclass()"
+              style="border: none; background-color: #be1035"
+            >
+              <img
+                style="height: 2rem; width: 2rem"
+                src="css/img/close-removebg-preview.png"
+                alt=""
+              />
+            </button>
+          </h4>
         </div>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#lora" onclick="toggleclass()"
+            >Home</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#Face" onclick="toggleclass()"
+            >Face</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#Body" onclick="toggleclass()"
+            >Body</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#SunScreen" onclick="toggleclass()"
+            >SunScreens</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#Hair" onclick="toggleclass()"
+            >Hair</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#Makeup" onclick="toggleclass()"
+            >MakeUp</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="#Perfumes6" onclick="toggleclass()"
+            >Perfumes</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="" onclick="toggleclass()"
+            >About Us</a
+          >
+        </il>
+        <hr style="color: black" />
+        <il class="nav-item">
+          <a class="nav-link nav-para" href="" onclick="toggleclass()">FAQ's</a>
+        </il>
+        <hr style="color: black" />
+        <div class="dropdown-center dropend DropDownMenu">
+          <img
+            src="css/img/filter - Copy.png"
+            class="dropdown-toggle filterimg"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          />
+          <p class="nav-para">Filter</p>
+          <div class="dropdown-menu ffiltermenu">
+            <label class="priceName" for="minPrice">Minimum Price:</label>
+            <input
+              class="priceInput"
+              type="number"
+              id="mminPrice"
+              name="minPrice"
+              value="0"
+              min="0"
+            />
+            <label class="priceName" for="maxPrice">Maximum Price:</label>
+            <input
+              class="priceInput"
+              type="number"
+              id="mmaxPrice"
+              name="maxPrice"
+              min="0"
+            />
+            <button class="buttons" onclick="aapplyFilter(toggleclass())">
+              Apply Filter</button
+            ><br /><br />
+            <button
+              class="buttons"
+              id="resetFilterButton"
+              onclick="rresetFilter(toggleclass())"
+            >
+              Reset Filter
+            </button>
+            <hr />
+            <p class="Filtername"><b>Filter By Name</b></p>
+            <div class="filter-name">
+              <button class="buttons" onclick="toggleclass()" id="AAll">
+                ALL
+              </button>
+              <button class="buttons" onclick="toggleclass()" id="FFacebutton">
+                Face
+              </button>
+              <button class="buttons" onclick="toggleclass()" id="BBodybutton">
+                Body</button
+              ><br />
+              <button
+                class="buttons"
+                onclick="toggleclass()"
+                id="SSunScreenbutton"
+              >
+                SunScreen
+              </button>
+              <button class="buttons" onclick="toggleclass()" id="HHairbutton">
+                Hair
+              </button>
+              <button
+                class="buttons"
+                onclick="toggleclass()"
+                id="MMakeUpbutton"
+              >
+                MakeUp
+              </button>
+              <button
+                class="buttons"
+                onclick="toggleclass()"
+                id="PPerfumesbutton"
+              >
+                Perfumes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <marquee id="ticker" behavior="scroll" direction="left"></marquee>
+      <marquee id="ticker" behavior="scroll" direction="left"></marquee>
     </footer>
-
-
 
     <!-- Contact Us Section & Form Start -->
     <div class="contact-container">
-        <div class="Abcontact">
-            <div class="row">
-                <div class="col-md-4 cont1">
-                    <div class="cont-icon-locate"><i class="fas fa-map-marker-alt locate-icon"></i></div>
-                    <div class="cont-content-body">
-                        <h3 class="cont-heading">address</h3>
-                        <h6 class="cont-heading-2">Main branch in Shara e Faisal</h6>
-                        <h6 class="cont-heading-2">Ground Floor<br>Contact +92 45317565</h6>
-                        <h6 class="cont-heading-2">Second branch in DHA Phase 2</h6>
-                        <h6 class="cont-heading-2">First Floor<br>Contact +92 45317565</h6>
-                    </div>
-                </div>
-                <div class="col-md-4 cont2">
-                    <h2 class="cont2-heading-1">get in touch</h2>
-                    <div class="cont-icon-locate-2"><i class="fas fa-phone-alt locate-icon"></i></div>
-                    <div class="cont-content-body-2">
-                        <h3 class="cont-heading">phone</h3>
-                        <h6 class="cont-heading-2">Main branch in Shara e Faisal</h6>
-                        <h6 class="cont-heading-2">Ground Floor<br>Contact +92 45317565</h6>
-                        <h6 class="cont-heading-2">Second branch in DHA Phase 2</h6>
-                        <h6 class="cont-heading-2">First Floor<br>Contact +92 45317565</h6>
-                    </div>
-                </div>
-                <div class="col-md-4 cont3">
-                    <div class="cont-icon-locate"><i class="fas fa-envelope locate-icon"></i></div>
-                    <div class="cont-content-body">
-                        <h3 class="cont-heading">email</h3>
-                        <h6 class="cont-heading-2">info@clarin.com</h6>
-                        <h6 class="cont-heading-2">sales@clarin.com</h6>
-                    </div>
-                </div>
+      <div class="Abcontact">
+        <div class="row">
+          <div class="col-md-4 cont1">
+            <div class="cont-icon-locate">
+              <i class="fas fa-map-marker-alt locate-icon"></i>
             </div>
-            <div class="row" id="second-row-cont">
-                <div class="col-md-6 cont4">
-                    <h2 class="second-cont-text">Message Us</h2>
-                    <div class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
-                        doloribus vitae ducimus eos eveniet amet porro in. Numquam quia minima natus incidunt cupiditate
-                        consectetur debitis!
-                    </div>
-                    <div class="logo-2"><img src="css/img/merchant_image-merchant_open_graph.png" alt=""></div>
-                </div>
-                <div class="col-md-6 cont5">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-6" id="form-bx">
-                                <input type="text" class="form-control" placeholder="First name"
-                                    aria-label="First name">
-                            </div>
-                            <div class="col-6" id="form-bx">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
-                            <div class="col-6" id="form-bx">
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                            </div>
-                            <div class="form-floating" id="form-bx">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Message</label>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary" type="submit" id="form-bx-btn">Submit form</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="cont-content-body">
+              <h3 class="cont-heading">address</h3>
+              <h6 class="cont-heading-2">Main branch in Shara e Faisal</h6>
+              <h6 class="cont-heading-2">
+                Ground Floor<br />Contact +92 45317565
+              </h6>
+              <h6 class="cont-heading-2">Second branch in DHA Phase 2</h6>
+              <h6 class="cont-heading-2">
+                First Floor<br />Contact +92 45317565
+              </h6>
             </div>
+          </div>
+          <div class="col-md-4 cont2">
+            <h2 class="cont2-heading-1">get in touch</h2>
+            <div class="cont-icon-locate-2">
+              <i class="fas fa-phone-alt locate-icon"></i>
+            </div>
+            <div class="cont-content-body-2">
+              <h3 class="cont-heading">phone</h3>
+              <h6 class="cont-heading-2">Main branch in Shara e Faisal</h6>
+              <h6 class="cont-heading-2">
+                Ground Floor<br />Contact +92 45317565
+              </h6>
+              <h6 class="cont-heading-2">Second branch in DHA Phase 2</h6>
+              <h6 class="cont-heading-2">
+                First Floor<br />Contact +92 45317565
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-4 cont3">
+            <div class="cont-icon-locate">
+              <i class="fas fa-envelope locate-icon"></i>
+            </div>
+            <div class="cont-content-body">
+              <h3 class="cont-heading">email</h3>
+              <h6 class="cont-heading-2">info@clarin.com</h6>
+              <h6 class="cont-heading-2">sales@clarin.com</h6>
+            </div>
+          </div>
         </div>
+        <div class="row" id="second-row-cont">
+          <div class="col-md-6 cont4">
+            <h2 class="second-cont-text">Message Us</h2>
+            <div class="second-cont-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis doloribus vitae ducimus eos eveniet amet porro in.
+              Numquam quia minima natus incidunt cupiditate consectetur debitis!
+            </div>
+            <div class="logo-2">
+              <img
+                src="css/img/merchant_image-merchant_open_graph.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 cont5">
+            <form>
+              <div class="row g-3">
+                <div class="col-6" id="form-bx">
+                  <input
+                    type="text"
+                    class="form-control"
+                    required
+                    pattern="^[A-Za-z]+$"
+                    placeholder="First name"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="col-6" id="form-bx">
+                  <input
+                    type="text"
+                    class="form-control"
+                    required
+                    pattern="^[A-Za-z]+$"
+                    placeholder="Last name"
+                    aria-label="Last name"
+                  />
+                </div>
+                <div class="col-6" id="form-bx">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Email"
+                    aria-label="Email"
+                    required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  />
+                </div>
+                <div class="form-floating" id="form-bx">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2">Message</label>
+                </div>
+                <div class="col-12">
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                    id="form-bx-btn"
+                  >
+                    Submit form
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Contact Us Section & form End-->
 
-
     <script>
+      function openProductModal(
+        name,
+        description,
+        mainImage,
+        child1,
+        child2,
+        price
+      ) {
+        document.getElementById("ProductHeading").textContent = name;
+        document.getElementById("ProductDescription").textContent = description;
+        document.getElementById("ProductPrice").textContent = price;
+        document.getElementById("ProductImage1").src = mainImage;
+        document.getElementById("ProductImage2").src = child1;
+        document.getElementById("ProductImage3").src = child2;
+      }
+      function increaseQuantity() {
+        var quantityInput = document.getElementById("quantity");
+        var currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+      }
 
-        function openProductModal(name, description, mainImage, child1, child2, price) {
-            document.getElementById("ProductHeading").textContent = name;
-            document.getElementById("ProductDescription").textContent = description;
-            document.getElementById("ProductPrice").textContent = price;
-            document.getElementById("ProductImage1").src = mainImage;
-            document.getElementById("ProductImage2").src = child1;
-            document.getElementById("ProductImage3").src = child2;
+      function decreaseQuantity() {
+        var quantityInput = document.getElementById("quantity");
+        var currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
         }
-        function increaseQuantity() {
-            var quantityInput = document.getElementById('quantity');
-            var currentValue = parseInt(quantityInput.value);
-            quantityInput.value = currentValue + 1;
-        }
-
-        function decreaseQuantity() {
-            var quantityInput = document.getElementById('quantity');
-            var currentValue = parseInt(quantityInput.value);
-            if (currentValue > 1) {
-                quantityInput.value = currentValue - 1;
-            }
-        }
+      }
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/ProductsDataBase.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
