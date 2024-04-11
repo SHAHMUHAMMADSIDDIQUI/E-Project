@@ -449,7 +449,6 @@ const PerfumesProducts = [
         price: "$29.00"
     },
 ]
-
 function AutocardGenerator() {
     const topsellingproductcontainer = document.getElementById("TopSellingContainer")
     const faceproductscontainer = document.getElementById("FaceProductsContainer");
@@ -458,6 +457,7 @@ function AutocardGenerator() {
     const hairproductscontainer = document.getElementById("HairProductsContainer");
     const makeupproductscontainer = document.getElementById("MakeupProductsContainer");
     const perfumesproductscontainer = document.getElementById("PerfumesProductsContainer");
+    const gallerycontainer = document.getElementById("GalleryContainer");
 
     /* TopSelling Products Generator */
     TopProducts.forEach(product => {
@@ -542,7 +542,52 @@ function AutocardGenerator() {
         <button data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')">Quick Overview</button>
       `
     });
+    /* For Gallery */
+    FaceProducts.forEach(product => {
+        gallerycontainer.innerHTML +=
+            `
+            <button class="gallery-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')"><img class="gallery img" src="${product.image}" alt="Product 1"></button>
+            
+            
+            `
+    })
+    BodyProducts.forEach(product => {
+        gallerycontainer.innerHTML +=
+            `
+            <button class="gallery-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')"><img class="gallery img" src="${product.image}" alt="Product 1"></button>
+            
+        `
+    })
+    SunScreenProducts.forEach(product => {
+        gallerycontainer.innerHTML +=
+            `
+            <button class="gallery-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')"><img class="gallery img" src="${product.image}" alt="Product 1"></button>
+            
+        `
+    })
+    HairProducts.forEach(product => {
+        gallerycontainer.innerHTML +=
+            `
+            <button class="gallery-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')"><img class="gallery img" src="${product.image}" alt="Product 1"></button>
+            
+        `
+    })
+    MakeupProducts.forEach(product => {
+        gallerycontainer.innerHTML +=
+            `
+            <button class="gallery-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')"><img class="gallery img" src="${product.image}" alt="Product 1"></button>
+            
+        `
+    })
+    PerfumesProducts.forEach(product => {
+        gallerycontainer.innerHTML +=
+            `
+            <button class="gallery-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')"><img class="gallery img" src="${product.image}" alt="Product 1"></button>
+            
+        `
+    })
 }
+
 window.onload = AutocardGenerator;
 
 
