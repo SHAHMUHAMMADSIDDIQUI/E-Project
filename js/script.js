@@ -37,7 +37,7 @@ function desktopScrollHandler() {
   let cardtwo = document.getElementById("Cardtwo");
   let cardthree = document.getElementById("Cardthree");
   let cardfour = document.getElementById("Cardfour");
-  if (window.scrollY > 1000) {
+  if (window.scrollY > 2200) {
 
     /* For CardOne */
     cardone.style.webkitAnimation = "cardslideup 1s forwards";

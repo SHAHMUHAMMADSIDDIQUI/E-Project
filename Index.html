@@ -80,8 +80,8 @@
       <a class="hvr-underline-from-center HomeHover" href="#Hair">Hair</a>
       <a class="hvr-underline-from-center HomeHover" href="#Makeup">MakeUp</a>
       <a class="hvr-underline-from-center HomeHover" href="#Perfumes">Perfumes</a>
-      <a class="hvr-underline-from-center HomeHover" href="">About Us</a>
-      <a class="hvr-underline-from-center HomeHover" href="">FAQ's</a>
+      <a class="hvr-underline-from-center HomeHover" href="#Aboutus">About Us</a>
+      <a class="hvr-underline-from-center HomeHover" href="#contactus">Contact Us's</a>
       <div class="dropdown DropDownMenu">
         <img src="css/img/filter.png" class="dropdown-toggle filterimg" data-bs-toggle="dropdown"
           aria-expanded="false" />
@@ -143,9 +143,11 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  <!-- Ticker -->
+  <div class="Ticker">
+    <marquee id="ticker" behavior="scroll" direction="left"></marquee>
+  </div>
   <!-- Top Selling Product Cards -->
-  <!-- Face Product Cards -->
   <section class="MainProductContainer">
     <h5 class="animate__fadeIn ProductcardHead">Top Selling Products</h5>
     <div class="container">
@@ -158,31 +160,39 @@
   <!--  Selling Bundle Cards   -->
   <h2 class="cardupperheading">Your skin. Our expertise.</h2>
   <p class="cardupperpara">DISCOVER OUR PLANT-POWERED FORMULAS</p>
-  <section class="container MaincardHead">
+  <section class="container MaincardHead" id="BundleContainer">
     <span id="Cardone" class="col-5 col-lg-3 Cardone">
-      <img class="cardimages" src="css/img/Card 1.jpg" alt="" />
-      <h7 class="Cardonehead"> MAKEUP</h7>
-      <p class="cardonepara"><u>SHOP NOW</u></p>
+      <img class="cardimages" src="css/img/Bundle Products/Bundle Product 1.0.png " alt="" />
+      <h6 class="Cardonehead">MAKEUP</h6>
+      <p data-bs-toggle="modal" data-bs-target="#exampleModal"
+        onclick="openProductModal('Extra-Firming Starter Kit', 'Discover Clarins’ self care essentials for age-defying skin with this exclusive limited-edition 3-piece Extra-Firming gift set—day and night creams that visibly firm and lift, and 3-in-1 day cream, express mask and makeup primer for skin that looks rested, radiant and refreshed.', 'css/img/Bundle Products/Bundle Product 1.0.png ', 'css/img/Bundle Products/Bundle Product 1.1.png ', 'css/img/Bundle Products/Bundle Product 1.2.png ', 'Price: $98.00')"
+        class="cardonepara"><u>SHOP NOW</u></p>
     </span>
+
     <span id="Cardtwo" class="col-5 col-lg-3 Cardtwo">
-      <img class="cardimages" src="css/img/Card 2.JPG" alt="" />
+      <img class="cardimages" src="css/img/Bundle Products/Bundle Product 2.0.png" alt="" />
       <h7 class="Cardtwohead"> MAKEUP</h7>
-      <p class="cardtwopara"><u>SHOP NOW</u></p>
+      <p data-bs-toggle="modal" data-bs-target="#exampleModal"
+        onclick="openProductModal('Super Restorative Starter Kit', 'Discover Clarins’ self care essentials for age-defying skin with this exclusive limited-edition Super Restorative 3-piece gift set—replenishing, deep wrinkle-fighting day and night creams, and a luxurious hand cream that visibly reduces the appearance of age spots.', 'css/img/Bundle Products/Bundle Product 2.0.png', 'css/img/Bundle Products/Bundle Product 2.1.png', 'css/img/Bundle Products/Bundle Product 2.2.png', 'Price: $136.00')"
+        class="cardtwopara"><u>SHOP NOW</u></p>
     </span>
     <span id="Cardthree" class="col-5 col-lg-3 Cardone">
-      <img class="cardimages" src="css/img/Card 3.jpg" alt="" />
+      <img class="cardimages" src="css/img/Bundle Products/Bundle Product 3.0.png" alt="" />
       <h7 class="Cardonehead"> MAKEUP</h7>
-      <p class="cardonepara"><u>SHOP NOW</u></p>
+      <p data-bs-toggle="modal" data-bs-target="#exampleModal"
+        onclick="openProductModal('Perfect Hydration Kit', 'Discover the essential body care routine. Exfoliate and nourish your body with this trio of products that smoothes, softens, and hydrates using the power of skin-loving pure plant extracts.', 'css/img/Bundle Products/Bundle Product 3.0.png ', 'css/img/Bundle Products/Bundle Product 3.1.png ', 'css/img/Bundle Products/Bundle Product 3.2.png ', 'Price: $50.00')"
+        class="cardonepara"><u>SHOP NOW</u></p>
     </span>
     <span id="Cardfour" class="col-5 col-lg-3 Cardtwo">
-      <img class="cardimages" src="css/img/Card 4.jpg" alt="" />
+      <img class="cardimages" src="css/img/Bundle Products/Bundle Product 4.0.png" alt="" />
       <h7 class="Cardtwohead"> MAKEUP</h7>
-      <p class="cardtwopara"><u>SHOP NOW</u></p>
+      <p data-bs-toggle="modal" data-bs-target="#exampleModal"
+        onclick="openProductModal('Hydra-Essentiel Starter Kit', 'Discover Clarins’ self care essentials for hydrated, radiant skin with this exclusive limited-edition 3-piece Hydra-Essential gift set—a super-quenching face cream and a intensely hydrating night cream that nourish, comfort + plump skin in :60¹ + 24H hydration.² , and a gentle, plant-based exfoliator that promotes soft, clean, radiant skin.', 'css/img/Bundle Products/Bundle Product 4.0.png ', 'css/img/Bundle Products/Bundle Product 4.1.png ', 'css/img/Bundle Products/Bundle Product 4.2.png ', 'Price: $52.00')"
+        class="cardtwopara"><u>SHOP NOW</u></p>
     </span>
   </section>
-
   <!-- About Us Section's Start-->
-  <div class="about-container">
+  <div class="about-container" id="Aboutus">
     <div class="Abcontainer">
       <div class="row">
         <div class="col-md-6 sec1"></div>
@@ -442,12 +452,10 @@
     </div>
   </section>
 
-  <footer>
-    <marquee id="ticker" behavior="scroll" direction="left"></marquee>
-  </footer>
+
 
   <!-- Contact Us Section & Form Start -->
-  <div class="contact-container">
+  <div class="contact-container" id="contactus">
     <div class="Abcontact">
       <!--  -->
       <div class="row" id="second-row-cont">
@@ -536,8 +544,33 @@
             <h6 class="cont-heading-2">sales@clarin.com</h6>
           </div>
         </div>
+        <div class="col-md-4 cont3">
+          <p style="font-size: 40px;font-family: Arial, Helvetica, sans-serif;"><u>Products</u></p>
+          <div class="">
+            <a class="cont-heading" style="text-decoration: none;" href="#lora">Home</a><br>
+            <a class="cont-heading" style="text-decoration: none;" href="#Face">Face</a><br>
+            <a class="cont-heading" style="text-decoration: none;" href="#Body">Body</a><br>
+            <a class="cont-heading" style="text-decoration: none;" href="#SunScreen">SunScreen</a><br>
+            <a class="cont-heading" style="text-decoration: none;" href="#Hair">Hair</a><br>
+            <a class="cont-heading" style="text-decoration: none;" href="#Makeup">MakeUp</a><br>
+            <a class="cont-heading" style="text-decoration: none;" href="#Perfumes">Perfumes</a><br>
+          </div>
+        </div>
+        <div class="col-md-4 cont3">
+          <a href="#contactus"
+            style="font-size: 40px;font-family: Arial, Helvetica, sans-serif; text-decoration: none;color: black;"><u>Contact
+              US</u></a>
+
+        </div>
+        <div class="col-md-4 cont3">
+          <a href="#Aboutus"
+            style="font-size: 40px;font-family: Arial, Helvetica, sans-serif; text-decoration: none;color: black;"><u>About
+              US</u></a>
+
+        </div>
       </div>
-    
+
+
     </div>
   </div>
   <!-- Contact Us Section & form End-->
