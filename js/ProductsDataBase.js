@@ -728,6 +728,7 @@ function applyFilter() {
         perfumescontainer.innerHTML = '<p>No products available in the specified price range.</p>';
     }
 }
+/* Reset Filter Setup */
 function resetFilter() {
     // Reset the input fields
     document.getElementById('minPrice').value = '0';
@@ -748,7 +749,7 @@ function resetContainer(containerId) {
     container.innerHTML = '';
 }
 
-
+/* Filter By Product Name */
 $(document).ready(function () {
     $("#All").click(function () {
         $("#Body,#Face ,#Hair,#Makeup,#SunScreen,#Perfumes").show(1000);
@@ -965,3 +966,35 @@ $(document).ready(function () {
     });
 
 });
+
+
+/* Modal Taking Inputs */
+
+function openProductModal(
+    name,
+    description,
+    mainImage,
+    child1,
+    child2,
+    price
+) {
+    document.getElementById("ProductHeading").textContent = name;
+    document.getElementById("ProductDescription").textContent = description;
+    document.getElementById("ProductPrice").textContent = price;
+    document.getElementById("ProductImage1").src = mainImage;
+    document.getElementById("ProductImage2").src = child1;
+    document.getElementById("ProductImage3").src = child2;
+}
+function increaseQuantity() {
+    var quantityInput = document.getElementById("quantity");
+    var currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+}
+
+function decreaseQuantity() {
+    var quantityInput = document.getElementById("quantity");
+    var currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+}

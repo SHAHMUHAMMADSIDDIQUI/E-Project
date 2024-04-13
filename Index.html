@@ -27,7 +27,7 @@
 
 <body>
   <!-- Upper Section-->
-  <section id="lora" class="UpperSec">
+  <section id="Home" class="UpperSec">
     <div>
       <p class="text para1"><b>Free Shipping</b> With Any $50+ Order</p>
       <p class="text para2"><b>3 Free Samples</b> With Any Order</p>
@@ -73,7 +73,7 @@
   <!-- Second Navbar -->
   <section class="secondary-Navbar">
     <div class="HomeSection">
-      <a class="hvr-underline-from-center HomeHover" href="#lora">Home</a>
+      <a class="hvr-underline-from-center HomeHover" href="#Home">Home</a>
       <a class="hvr-underline-from-center HomeHover" href="#Face">Face</a>
       <a class="hvr-underline-from-center HomeHover" href="#Body">Body</a>
       <a class="hvr-underline-from-center HomeHover" href="#SunScreen">SunScreens</a>
@@ -110,6 +110,8 @@
     </div>
   </section>
 
+
+
   <!--Running Banner -->
   <div id="carouselExampleInterval" class="carousel slide RunningBanner animate__animated animate__zoomIn"
     data-bs-ride="carousel">
@@ -143,6 +145,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+
   <!-- Ticker -->
   <div class="Ticker">
     <marquee id="ticker" behavior="scroll" direction="left"></marquee>
@@ -191,6 +195,10 @@
         class="cardtwopara"><u>SHOP NOW</u></p>
     </span>
   </section>
+
+
+
+
   <!-- About Us Section's Start-->
   <div class="about-container" id="Aboutus">
     <div class="Abcontainer">
@@ -215,6 +223,7 @@
     </div>
   </div>
   <!-- About Us Section's End-->
+
 
   <!-- Face Product Cards -->
   <section id="Face" class="MainProductContainer">
@@ -276,6 +285,9 @@
     </div>
   </section>
 
+
+
+
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -330,37 +342,26 @@
   </div>
 
 
-  <!--  -->
-  <section id="gallery">
-    <p style="font-size: 35px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Gallery</p>
-    <div class="gallery-container">
-      <div class="gallery" id="GalleryContainer">
-        <!-- Add your product images here -->
+  <!--Gallery  -->
+  <section id="gallery" style="padding-top: 200px;">
+    <section class="gallery">
+      <p style="font-size: 35px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Gallery</p>
+      <div class="gallery-container">
+        <div class="gallery" id="GalleryContainer">
+          <!-- Add your product images here -->
 
 
 
-        <!-- Add more product images as needed -->
+          <!-- Add more product images as needed -->
+        </div>
       </div>
-    </div>
+    </section>
   </section>
-  <!--  -->
-  <!--  -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h6 class="modal-title fs-5" id="exampleModalLabel">Modal title</h6>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- Modal Body -->
-        <div class="modal-body Modalbody">
-          <img id="galleryimages" src="" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  -->
+  <!-- Gallery End -->
+
+
+
+
   <!-- For Mobile Screen NavBarSetup -->
   <section>
     <div id="MobilehomeSection" class="MobilehomeSection">
@@ -482,13 +483,13 @@
                   aria-label="Last name" />
               </div>
               <div class="col-6" id="form-bx">
-                <input type="text" class="form-control" placeholder="Email" aria-label="Email" required
-                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+                  " />
               </div>
               <div class="form-floating" id="form-bx">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                   style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Message</label>
+                <label for="floatingTextarea2">Leave a comment here</label>
               </div>
               <div class="col-12">
                 <button class="btn btn-primary" type="submit" id="form-bx-btn">
@@ -545,9 +546,9 @@
           </div>
         </div>
         <div class="col-md-4 cont3">
-          <p style="font-size: 40px;font-family: Arial, Helvetica, sans-serif;"><u>Products</u></p>
-          <div class="">
-            <a class="cont-heading" style="text-decoration: none;" href="#lora">Home</a><br>
+          <p class="cont2-heading-1" style="font-size: 34px;">Products</p>
+          <div class="" style="margin-top: 20px;">
+            <a class="cont-heading" style="text-decoration: none;" href="#Home">Home</a><br>
             <a class="cont-heading" style="text-decoration: none;" href="#Face">Face</a><br>
             <a class="cont-heading" style="text-decoration: none;" href="#Body">Body</a><br>
             <a class="cont-heading" style="text-decoration: none;" href="#SunScreen">SunScreen</a><br>
@@ -557,15 +558,19 @@
           </div>
         </div>
         <div class="col-md-4 cont3">
-          <a href="#contactus"
-            style="font-size: 40px;font-family: Arial, Helvetica, sans-serif; text-decoration: none;color: black;"><u>Contact
-              US</u></a>
+          <a href="#contactus" class="cont2-heading-1"
+            style="font-size: 34px; text-decoration: none;color: black;">Contact
+            US</a><br>
+          <br>
+          <br>
+          <br>
+          <a href="#gallery" class="cont2-heading-1"
+            style=" font-size: 34px; text-decoration: none;color: black;">Gallery</a>
 
         </div>
         <div class="col-md-4 cont3">
-          <a href="#Aboutus"
-            style="font-size: 40px;font-family: Arial, Helvetica, sans-serif; text-decoration: none;color: black;"><u>About
-              US</u></a>
+          <a href="#Aboutus" class="cont2-heading-1" style="font-size: 34px; text-decoration: none;color: black;">About
+            US</a>
 
         </div>
       </div>
@@ -574,38 +579,6 @@
     </div>
   </div>
   <!-- Contact Us Section & form End-->
-
-  <script>
-
-    function openProductModal(
-      name,
-      description,
-      mainImage,
-      child1,
-      child2,
-      price
-    ) {
-      document.getElementById("ProductHeading").textContent = name;
-      document.getElementById("ProductDescription").textContent = description;
-      document.getElementById("ProductPrice").textContent = price;
-      document.getElementById("ProductImage1").src = mainImage;
-      document.getElementById("ProductImage2").src = child1;
-      document.getElementById("ProductImage3").src = child2;
-    }
-    function increaseQuantity() {
-      var quantityInput = document.getElementById("quantity");
-      var currentValue = parseInt(quantityInput.value);
-      quantityInput.value = currentValue + 1;
-    }
-
-    function decreaseQuantity() {
-      var quantityInput = document.getElementById("quantity");
-      var currentValue = parseInt(quantityInput.value);
-      if (currentValue > 1) {
-        quantityInput.value = currentValue - 1;
-      }
-    }
-  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js"></script>

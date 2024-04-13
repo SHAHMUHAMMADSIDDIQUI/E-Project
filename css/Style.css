@@ -780,7 +780,7 @@ header {
     border-radius: 3px;
 }
 
-#gallery {
+.gallery {
     margin-top: 20px;
     background: linear-gradient(90deg, #ffffff, #adadad);
     overflow-x: auto;
