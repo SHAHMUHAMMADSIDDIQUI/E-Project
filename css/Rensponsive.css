@@ -104,7 +104,8 @@
         background-color: #e0e0e0;
     }
 
-    /* Selling Bundle Cards  */
+    /* Second NavBar End */
+    /* Selling Offers Cards   */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -247,6 +248,8 @@
         flex-direction: column;
         margin: 1rem 0;
     }
+
+    /* Selling Offers Cards End */
 }
 
 @media (max-width: 1280px) {
@@ -408,7 +411,8 @@
         background-color: #e0e0e0;
     }
 
-    /* Selling Bundle Cards  */
+    /* Second NavBar End */
+    /*Selling Offers Cards   */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -552,6 +556,8 @@
         margin: 1rem 0;
     }
 
+    /* Selling Offers Cards End */
+
 }
 
 @media (max-width: 1024px) {
@@ -561,6 +567,7 @@
         padding: 0;
     }
 
+    /* Upper Deal Section */
     .UpperSec {
         background-color: rgb(180, 156, 140);
         position: relative;
@@ -690,6 +697,8 @@
         }
     }
 
+    /* Upper Deal Section End */
+    /* Header */
     header {
         position: sticky;
         top: 0;
@@ -766,6 +775,8 @@
         font-size: 10px;
     }
 
+    /* Header End */
+    /* Second NavBar */
     .secondary-Navbar {
         display: none;
     }
@@ -786,6 +797,8 @@
         display: none;
     }
 
+    /* Second NavBar */
+    /* Running Banner */
     .RunningBanner {
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     }
@@ -794,6 +807,7 @@
         height: 500px;
     }
 
+    /* Running Banner End */
     /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
@@ -843,7 +857,8 @@
         background-color: #0056b3;
     }
 
-    /* About-us-Section Start */
+    /* Top Selling Products Cards End */
+    /*About Us Section's Start */
     .about-container {
         display: flex;
         width: 100%;
@@ -912,9 +927,9 @@
     }
 
 
-    /* About-us-Section End */
+    /* About Us Section's End */
 
-    /* Selling Bundle Cards  */
+    /* Selling Offers Cards   */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -1058,7 +1073,8 @@
         margin: 1rem 0;
     }
 
-    /*Products Cards */
+    /* Selling Offers Cards End */
+    /*Products Cards  */
     .MainProductContainer {
         padding-top: 200px;
     }
@@ -1113,6 +1129,7 @@
         background-color: #0056b3;
     }
 
+    /* Products Cards End */
 
     /* Modal Setup */
     .Modalbody {
@@ -1179,7 +1196,7 @@
         border-radius: 3px;
     }
 
-    /*  */
+    /*For Mobile Screen NavBarSetup  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -1211,6 +1228,7 @@
         transition: 1s ease-out;
     }
 
+    /* For Mobile Screen NavBarSetup End */
     footer {
         background-color: #f2f2f2;
         padding: 10px;
@@ -1233,6 +1251,7 @@
         padding: 0;
     }
 
+    /* Upper Deal Section */
     .UpperSec {
         background-color: rgb(180, 156, 140);
         position: relative;
@@ -1362,6 +1381,8 @@
         }
     }
 
+    /* Upper Deal Section End */
+    /* Header */
     header {
         position: sticky;
         top: 0;
@@ -1438,6 +1459,8 @@
         font-size: 10px;
     }
 
+    /* Header End */
+    /* Second NavBar */
     .secondary-Navbar {
         display: none;
     }
@@ -1458,6 +1481,8 @@
         display: none;
     }
 
+    /* Second NavBar End */
+    /* Running Banner */
     .RunningBanner {
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     }
@@ -1466,6 +1491,7 @@
         height: 500px;
     }
 
+    /* Running Banner End */
     /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
@@ -1515,9 +1541,9 @@
         background-color: #0056b3;
     }
 
+    /*  Top Selling Products Cards End */
 
-
-    /* Selling Bundle Cards  */
+    /* Selling Offers Cards   */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -1661,7 +1687,7 @@
         margin: 1rem 0;
     }
 
-
+    /* Selling Offers Cards End */
     /* About-us-Section Start */
     .about-container {
         display: flex;
@@ -1788,7 +1814,7 @@
         background-color: #0056b3;
     }
 
-
+    /* Products Cards End */
     /* Modal Setup */
     .Modalbody {
         display: flex;
@@ -1853,7 +1879,7 @@
         border-radius: 3px;
     }
 
-    /*  */
+    /*For Mobile Screen NavBarSetup  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -1885,6 +1911,7 @@
         transition: 1s ease-out;
     }
 
+    /* For Mobile Screen NavBarSetup End */
     footer {
         background-color: #f2f2f2;
         padding: 10px;
@@ -1907,6 +1934,7 @@
         padding: 0;
     }
 
+    /* Upper Deal Section */
     .UpperSec {
         background-color: rgb(180, 156, 140);
         position: relative;
@@ -2036,6 +2064,8 @@
         }
     }
 
+    /* Upper Deal Section End */
+    /* Header */
     header {
         position: sticky;
         top: 0px;
@@ -2111,6 +2141,8 @@
         font-size: 10px;
     }
 
+    /* Header */
+    /* Second NavBar */
     .secondary-Navbar {
         display: none;
     }
@@ -2131,6 +2163,8 @@
         display: none;
     }
 
+    /* Second NavBar End */
+    /* Running Banner */
     .RunningBanner {
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     }
@@ -2139,7 +2173,7 @@
         height: 500px;
     }
 
-
+    /* Running Banner End */
     /* Top Selling Products Cards */
     .Topsellhead {
         margin-top: 3rem;
@@ -2190,58 +2224,8 @@
         background-color: #0056b3;
     }
 
-    @-webkit-keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @keyframes slideleft {
-        from {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @-webkit-keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    @keyframes slideRight {
-        from {
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-        }
-
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
+    /* Top Selling Products Cards End */
+    /* Selling Offers Cards  */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -2381,6 +2365,7 @@
         margin: 1rem 0;
     }
 
+    /* Selling Offers Cards End */
     /* About-us-Section Start */
     .about-container {
         display: flex;
@@ -2507,7 +2492,7 @@
         background-color: #0056b3;
     }
 
-
+    /* Products Cards End */
     /* Modal Setup */
     .Modalbody {
         display: flex;
@@ -2572,7 +2557,7 @@
         border-radius: 3px;
     }
 
-    /*  */
+    /* For Mobile Screen NavBarSetup */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -2604,6 +2589,7 @@
         transition: 1s ease-out;
     }
 
+    /* For Mobile Screen NavBarSetup End */
     footer {
         background-color: #f2f2f2;
         padding: 10px;
@@ -2627,6 +2613,7 @@
         padding: 0;
     }
 
+    /* Upper Deal Section */
     .UpperSec {
         background-color: rgb(180, 156, 140);
         position: relative;
@@ -2756,6 +2743,8 @@
         }
     }
 
+    /* Upper Deal Section End */
+    /* Header */
     header {
         position: sticky;
         top: 0px;
@@ -2832,6 +2821,8 @@
         font-size: 10px;
     }
 
+    /* Header End */
+    /* Second NavBar */
     .secondary-Navbar {
         display: none;
     }
@@ -2852,6 +2843,8 @@
         display: none;
     }
 
+    /* Second NavBar End*/
+    /* Running Banner */
     .RunningBanner {
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     }
@@ -2860,6 +2853,7 @@
         height: 350px;
     }
 
+    /* Running Banner End */
 
     /* Top Selling Products Cards */
     .Topsellhead {
@@ -2912,9 +2906,9 @@
         background-color: #0056b3;
     }
 
+    /* Top Selling Products Cards End */
 
-
-    /*  */
+    /*Selling Offers Cards   */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -3052,6 +3046,7 @@
         }
     }
 
+    /* Selling Offers Cards  */
 
     /* About-us-Section Start */
     .about-container {
@@ -3149,7 +3144,7 @@
 
     .product img {
         width: 100%;
-        height: 15rem;
+        height: auto;
         border-radius: 5px;
         margin-bottom: 10px;
     }
@@ -3244,7 +3239,7 @@
         border-radius: 3px;
     }
 
-    /*  */
+    /*For Mobile Screen NavBarSetup  */
     .MobilehomeSection {
         position: fixed;
         top: 0;
@@ -3276,6 +3271,7 @@
         transition: 1s ease-out;
     }
 
+    /* For Mobile Screen NavBarSetup End */
     footer {
         background-color: #f2f2f2;
         padding: 10px;
@@ -3298,6 +3294,7 @@
         padding: 0;
     }
 
+    /* Upper Deal Section */
     .UpperSec {
         background-color: rgb(180, 156, 140);
         position: relative;
@@ -3427,6 +3424,8 @@
         }
     }
 
+    /* Upper Deal Section End */
+    /* Header */
     header {
         position: sticky;
         top: 0px;
@@ -3503,6 +3502,8 @@
         font-size: 10px;
     }
 
+    /* Header End */
+    /* Second NavBar */
     .secondary-Navbar {
         display: none;
     }
@@ -3523,11 +3524,12 @@
         display: none;
     }
 
+    /* Second NavBar End */
 
 
 
 
-
+    /* Running Banner */
     .RunningBanner {
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     }
@@ -3536,6 +3538,7 @@
         height: 250px;
     }
 
+    /* Running Banner End */
 
     /* Top Selling Products Cards */
     .Topsellhead {
@@ -3587,9 +3590,10 @@
         background-color: #0056b3;
     }
 
+    /* Top Selling Products Cards End */
 
 
-    /* Selling Bundle Cards */
+    /* Selling Offers Cards  */
     .cardupperheading {
         text-align: center;
         margin-top: 5rem;
@@ -3739,6 +3743,7 @@
         }
     }
 
+    /* Selling Offers Cards End */
     /*Products Cards */
     .MainProductContainer {
         padding-top: 200px;
@@ -3764,7 +3769,7 @@
 
     .product img {
         width: 100%;
-        height: 15rem;
+        height: auto;
         border-radius: 5px;
         margin-bottom: 10px;
     }
@@ -3793,7 +3798,7 @@
         background-color: #0056b3;
     }
 
-
+    /* Products Cards End */
     /* Modal Setup */
     .Modalbody {
         display: flex;
@@ -3962,6 +3967,7 @@
         transition: 1s ease-out;
     }
 
+    /* For Mobile Screen NavBarSetup End */
     /* Footer */
     footer {
         background-color: #f2f2f2;

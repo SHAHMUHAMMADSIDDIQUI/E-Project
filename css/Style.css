@@ -6,6 +6,7 @@ body {
     background-color: #f2f2f2
 }
 
+/* Upper Deal Section */
 .UpperSec {
     background-color: rgb(180, 156, 140);
     position: relative;
@@ -135,6 +136,8 @@ body {
     }
 }
 
+/* Upper Deal Section End */
+/* Header */
 header {
     position: sticky;
     top: 0px;
@@ -233,6 +236,7 @@ header {
     color: white;
 }
 
+/* Header End */
 
 /* Second NavBar */
 .secondary-Navbar {
@@ -338,6 +342,7 @@ header {
     background-color: #e0e0e0;
 }
 
+/* Second NavBar End */
 
 /* Running Banner  */
 .RunningBanner {
@@ -348,6 +353,8 @@ header {
     height: 760px;
 }
 
+/* Running Banner End */
+/* Ticker */
 .Ticker {
     background: rgb(252, 0, 54);
     background: linear-gradient(90deg, rgba(252, 0, 54, 1) 51%, rgba(121, 37, 37, 1) 100%);
@@ -361,6 +368,7 @@ header {
 
 }
 
+/* Ticker End */
 /* Top Selling Products Cards */
 .Topsellhead {
     margin-top: 3rem;
@@ -408,9 +416,10 @@ header {
     background-color: #0056b3;
 }
 
+/* Top Selling Products Cards End */
 
 
-/* Selling Bundle Cards  */
+/* Selling Offers Cards   */
 .cardupperheading {
     text-align: center;
     margin-top: 5rem;
@@ -537,6 +546,7 @@ header {
     }
 }
 
+/* Selling Offers Cards End  */
 .price-filter {
     margin-bottom: 20px;
 }
@@ -565,7 +575,7 @@ header {
     background-color: #0056b3;
 }
 
-/* About-us-Section Start */
+/* About Us Section's Start */
 .about-container {
     display: flex;
     width: 100%;
@@ -639,7 +649,7 @@ header {
 }
 
 
-/* About-us-Section End */
+/* About Us Section's End */
 
 /*Products Cards */
 .product-list {
@@ -717,8 +727,14 @@ header {
 .product button:hover {
     background-color: #0056b3;
 }
-
+/* Products Cards End */
 /* Modal Setup */
+.ModalHeader{
+    background: rgb(252, 0, 54);
+    background: linear-gradient(90deg, rgba(252, 0, 54, 1) 51%, rgba(121, 37, 37, 1) 100%);
+    color: #fff;
+}
+
 .Modalbody {
     display: flex;
     justify-content: center;
@@ -788,8 +804,6 @@ header {
 
 .gallery-container {
     white-space: nowrap;
-
-    /* Ensures items stay on a single line */
 }
 
 .gallery img {
@@ -810,11 +824,11 @@ header {
     border: none;
 }
 
-/* Mobile Menu Bar */
+/* For Mobile Screen NavBarSetup */
 .MobilehomeSection {
     display: none;
 }
-
+/* For Mobile Screen NavBarSetup End */
 /* Footer */
 footer {
     background-color: #f2f2f2;
@@ -827,7 +841,6 @@ footer {
     width: 100%;
     overflow: hidden;
     margin-top: 50px;
-
     background: linear-gradient(90deg, #ffffff, #adadad);
 
 }

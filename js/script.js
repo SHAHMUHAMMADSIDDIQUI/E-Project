@@ -1,7 +1,7 @@
-/*[[[[[    Visitior Count   ]]]]]]]]*/
+/* Visitor Counter */
 // Retrieve visitor count from localStorage or initialize it to 0
-let visitorCount = localStorage.getItem('visitorCount');
-visitorCount = visitorCount ? parseInt(visitorCount) : 0;
+let visitorCount = localStorage.getItem('visitorCount')||0;
+/* visitorCount = visitorCount ? parseInt(visitorCount) : 0; */
 
 // Update visitor count display
 document.getElementById('visitor-count').textContent = visitorCount;
